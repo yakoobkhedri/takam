@@ -283,22 +283,22 @@ a {
     /* width of the entire scrollbar */
 }
 .hidden-scroll::-webkit-scrollbar-track {
-    background: #db60195a;
+    background: transparent;
     /* color of the tracking area */
     margin: 29px 0;
 }
 .hidden-scroll::-webkit-scrollbar-thumb{
-    background-color: #db5f19;
+    background-color: transparent;
     /* color of the scroll thumb */
     border-radius: 40px;
     /* roundness of the scroll thumb */
-    border: 1px solid #db5f19;
+    border: 1px solid transparent;
     /* creates padding around scroll thumb */
 }
 .hidden-scroll {
     scrollbar-width: thin;
     /* "auto" or "thin" */
-    scrollbar-color: #db5f19 #db60195a;
+    scrollbar-color: transparent transparent;
     /* scroll thumb and track */
     scroll-margin: 29px 0;
 }
