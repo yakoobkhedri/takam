@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>کارهای من</title>
+</head>
+
+<body>
+
+  <!-- overlay -->
+  <div id="overlay" class="position-fixed end-0 start-0 bottom-0 top-0"></div>
+  <!-- <img src="assets/img/111.png"> -->
+  <main>
+    <div class="d-flex">
+      <aside class="w-246 p-3 border-start bg-white h-100vh overflow-auto hidden-scroll">
+        <div>
+          <img alt="avatar" src="assets/img/97388270917039638331689339881536.jpg"
+            class="rounded-circle border-main-2 h-140 w-140 mx-auto d-block img-fluid">
+          <p class="mb-1 mt-2 text-orange text-center font-bold">یعقوب خدری</p>
+          <p class="mb-0 text-center font-bold fs-14">برنامه نویس فرانت اند</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-between mt-4 gap-2">
+          <div
+            class="rounded-8 border border-2 d-flex align-items-center gap-2  px-3 h-48 flex-grow-1 shadow-sm cursor-pointer">
+            <p class="mb-0 fw-bold fs-14">چالش‌ جدید</p>
+            <p class="mb-0 fw-bold">+</p>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center border border-2 rounded-8 shadow-sm cursor-pointer h-48 w-48">
+            <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.4143 11L14.9142 14.5" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" />
+              <circle cx="6.5" cy="6.5" r="6" fill="#F2F2F2" stroke="#6B6F76" />
+            </svg>
+          </div>
+        </div>
+        <ul class="mt-4 fw-bold list-unstyled pe-0">
+          <li class="d-block mb-3 ">
+            <a class="d-flex align-items-center gap-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-speedometer text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2M3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.39.39 0 0 0-.029-.518z" />
+                <path fill-rule="evenodd"
+                  d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.95 11.95 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0" />
+              </svg>
+              <p class="mb-0">تالار عمومی</p>
+            </a>
+          </li>
+          <li class="d-block mb-3 ">
+            <a class="d-flex align-items-center gap-2 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-slack text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111.756 8.43 1.68 8.43h1.682zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682zm6.749 1.682c0-.926.755-1.682 1.68-1.682S16 4.964 16 5.889s-.756 1.681-1.68 1.681h-1.681zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68s.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681z" />
+              </svg>
+              <p class="mb-0">کارهای من</p>
+            </a>
+          </li>
+          <li class="d-block mb-3 ">
+            <a class="d-flex align-items-center gap-2 text-dark">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 2C0 0.89543 0.895431 0 2 0H12C13.1046 0 14 0.895431 14 2V12C14 13.1046 13.1046 14 12 14H2C0.89543 14 0 13.1046 0 12V2Z"
+                  fill="#E65100" />
+                <rect x="2" y="2" width="10" height="10" rx="2" fill="white" />
+                <path d="M7 7V4" stroke="#E65100" stroke-linecap="round" />
+                <path d="M7 7L10 6.56128" stroke="#E65100" stroke-linecap="round" />
+              </svg>
+              <p class="mb-0">عقربه</p>
+            </a>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-cash-coin text-orange" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                <path
+                  d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                <path
+                  d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+              </svg>
+              <p class="mb-0">امور مالی</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer mb-2">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">صورتحساب کل سیستم</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 cursor-pointer mb-2">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">صورتحساب من</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">ثبت هزینه شرکتی</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.22222" height="6.22222" rx="0.6" fill="#E65100" />
+                <rect x="7.77734" width="6.22222" height="6.22222" rx="0.6" fill="#E65100" />
+                <rect y="7.77783" width="6.22222" height="6.22222" rx="0.6" fill="#E65100" />
+                <rect x="7.77734" y="7.77783" width="6.22222" height="6.22222" rx="0.6" fill="#E65100" />
+              </svg>
+              <p class="mb-0">پروژه ها</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">لیست پروژه ها</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-graph-up-arrow text-orange" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+              </svg>
+              <p class="mb-0">گزارش</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">کارکرد همکاران</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-megaphone-fill text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06" />
+              </svg>
+              <p class="mb-0">اطلاع رسانی</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">اطلاعیه ها</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-building text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+              </svg>
+              <p class="mb-0">گروه مالی تاو</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">تاو</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-building text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+              </svg>
+              <p class="mb-0">شرکت ماهور</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">ماهور</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-building text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+              </svg>
+              <p class="mb-0">شرکت اکسیر ویدا</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <a class="d-flex align-items-center gap-2 cursor-pointer">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0 text-dark fs-14">ویدا</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-block mb-3">
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <p class="mb-0">گروه های من</p>
+              <svg class="mt-1" width="12" height="12" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent">
+              <div class="py-2">
+                <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0">شتابدهنده ماهور</p>
+                  <svg class="mt-1" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                      fill="#90959D" />
+                  </svg>
+                </div>
+                <div class="dropdownContent">
+                  <div class="py-2">
+                    <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="11" height="11" rx="2" fill="#E65100" />
+                        <path
+                          d="M2 4C2 2.89543 2.89543 2 4 2H7C8.10457 2 9 2.89543 9 4V7C9 8.10457 8.10457 9 7 9H4C2.89543 9 2 8.10457 2 7V4Z"
+                          fill="white" />
+                        <rect x="4" y="4" width="3" height="3" rx="1" fill="#6B6F76" />
+                        <rect x="3" y="3" width="11" height="11" rx="2" fill="#E65100" />
+                        <rect x="5" y="5" width="7" height="7" rx="2" fill="white" />
+                        <rect x="7" y="7" width="3" height="3" rx="1" fill="#E65100" />
+                      </svg>
+                      <p class="mb-0">چالش ها</p>
+                    </div>
+                    <div class="dropdownContent">
+                      <div class="py-2 border-end border-2 me-1 pe-3">
+                        <a class="text-dark d-block">فعال</a>
+                        <a class="text-dark d-block">لیست انتظار</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <div class="flex-grow-1 position-relative h-100vh h-lg-auto overflow-auto hidden-scroll">
+        <div class="py-4 px-3 border-bottom ">
+          <div class="row g-0 mx-0 ">
+            <div class="col-xl-7 col-lg-8 d-flex align-items-center justify-content-between ">
+              <div class="d-flex align-items-center gap-1 fs-12">
+                <svg id="hamIcon" class="cursor-pointer d-lg-none ms-3 " width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 5.995C2 5.445 2.446 5 2.995 5L11.005 5C11.2689 5 11.522 5.10483 11.7086 5.29143C11.8952 5.47803 12 5.73111 12 5.995C12 6.25889 11.8952 6.51197 11.7086 6.69857C11.522 6.88517 11.2689 6.99 11.005 6.99L2.995 6.99C2.445 6.99 2 6.545 2 5.995ZM2 12C2 11.45 2.446 11.005 2.995 11.005L21.005 11.005C21.2689 11.005 21.522 11.1098 21.7086 11.2964C21.8952 11.483 22 11.7361 22 12C22 12.2639 21.8952 12.517 21.7086 12.7036C21.522 12.8902 21.2689 12.995 21.005 12.995L2.995 12.995C2.445 12.995 2 12.549 2 12ZM2.995 17.01C2.73111 17.01 2.47803 17.1148 2.29143 17.3014C2.10483 17.488 2 17.7411 2 18.005C2 18.2689 2.10483 18.522 2.29143 18.7086C2.47803 18.8952 2.73111 19 2.995 19L15.005 19C15.1357 19 15.2651 18.9743 15.3858 18.9243C15.5065 18.8743 15.6162 18.801 15.7086 18.7086C15.801 18.6162 15.8743 18.5065 15.9243 18.3858C15.9743 18.2651 16 18.1357 16 18.005C16 17.8743 15.9743 17.7449 15.9243 17.6242C15.8743 17.5035 15.801 17.3938 15.7086 17.3014C15.6162 17.209 15.5065 17.1357 15.3858 17.0857C15.2651 17.0357 15.1357 17.01 15.005 17.01L2.995 17.01Z"
+                    fill="black"></path>
+                </svg>
+                <p class="mb-0 ">کارهای من</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="bi bi-chevron-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                </svg>
+                <p class="mb-0 text-secondary ">مجری کار</p>
+              </div>
+              <select class="bg-transparent border rounded-8 px-3 fs-14 py-1 shadow-sm">
+                <option>نحوه نمایش</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="py-4 px-3">
+          <div class="row g-0 mx-0">
+            <div class="col-xl-7 col-lg-8">
+              <div class="d-flex flex-wrap flex-lg-nowrap fs-12 font-bold gap-3 align-items-center bg-gray p-3 p-lg-0 rounded-16 w-100 text-center  ">
+                <p data-id="1" id="openDropdown"
+                  class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab">مجری کار</p>
+                <p data-id="2" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab tab2">کارفرما</p>
+                <p data-id="3" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab tab2">کارهای اشتراکی</p>
+                <p data-id="4" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab tab2">فعالیت ها</p>
+              </div>
+              <ul id="dropdown"
+                class="list-unstyled flex-wrap shadow-sm rounded-5 mt-2 bg-white font-bold p-3 mb-0 d-none  align-items-center gap-3 fs-14">
+                <li data-id="1" class="flex-grow-1 tab3 cursor-pointer">کارهای جدید <span
+                    class="badge bg-orange d-inline-block me-1 ">2</span></li>
+                <li data-id="2" class="flex-grow-1 tab3 cursor-pointer">کارهای در حال انجام <span
+                    class="badge bg-orange d-inline-block me-1 ">3</span></li>
+                <li data-id="3" class="flex-grow-1 tab3 cursor-pointer">کارهای انجام شده <span
+                    class="badge bg-orange d-inline-block me-1 ">1</span></li>
+                <li data-id="4" class="flex-grow-1 tab3 cursor-pointer">همه کارها<span
+                    class="badge bg-orange d-inline-block me-1 ">5</span></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="py-4">
+              <div class="tab-content" data-id="1">
+                <div data-id="1" class="table-responsive tab-content2 d-none">
+                    <table
+                    class="table table-bordered table-striped table-hover text-center fs-12">
+                    <thead class="bg-orange text-white">
+                      <tr>
+                        <th>ردیف</th>
+                        <th>شرکت</th>
+                        <th>کارگاه</th>
+                        <th>کار فرما</th>
+                        <th>عنوان</th>
+                        <th>فایل</th>
+                        <th>تاریخ درج</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ پایان</th>
+                        <th>ساعت کاری</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div data-id="2" class="table-responsive tab-content2 d-none ">
+                    <table
+                    class="table table-bordered table-striped table-hover text-center fs-12">
+                    <thead class="bg-orange text-white">
+                      <tr>
+                        <th>ردیف</th>
+                        <th>شرکت</th>
+                        <th>کارگاه</th>
+                        <th>کار فرما</th>
+                        <th>عنوان</th>
+                        <th>فایل</th>
+                        <th>تاریخ درج</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ پایان</th>
+                        <th>ساعت کاری</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div data-id="3" class="table-responsive tab-content2 d-none ">
+                    <table
+                    class="table table-bordered table-striped table-hover text-center fs-12">
+                    <thead class="bg-orange text-white">
+                      <tr>
+                        <th>ردیف</th>
+                        <th>شرکت</th>
+                        <th>کارگاه</th>
+                        <th>کار فرما</th>
+                        <th>عنوان</th>
+                        <th>فایل</th>
+                        <th>تاریخ درج</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ پایان</th>
+                        <th>ساعت کاری</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div data-id="4" class="table-responsive tab-content2 d-none ">
+                    <table
+                    class="table table-bordered table-striped table-hover text-center fs-12">
+                    <thead class="bg-orange text-white">
+                      <tr>
+                        <th>ردیف</th>
+                        <th>شرکت</th>
+                        <th>کارگاه</th>
+                        <th>کار فرما</th>
+                        <th>عنوان</th>
+                        <th>فایل</th>
+                        <th>تاریخ درج</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ پایان</th>
+                        <th>ساعت کاری</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                      <tr>
+                        <td>۱</td>
+                        <td>هیتا</td>
+
+                        <td>سایت هیتا</td>
+                        <td>بلال رستمی</td>
+
+                        <td>
+                          <a> 
+                            تبدیل
+                            فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                          </a>
+                          </td>
+                        <td>
+                          <p>ندارد</p>
+                        </td>
+                        <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                        <td>
+                          <p>انجام شد</p>
+                        </td>
+                        <td>۱۴۰۲/۱۰/۳۰</td>
+                        <td>۲۲ ساعت</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="tab-content d-none " data-id="2">کارفرما</div>
+              <div class="tab-content d-none " data-id="3">کارهای اشتراکی</div>
+              <div class="tab-content d-none " data-id="4">فعالیت ها</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
