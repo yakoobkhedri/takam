@@ -17,8 +17,14 @@ let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
 let tabs=Array.from(document.getElementsByClassName('tab'));
 let tab2=Array.from(document.getElementsByClassName('tab2'));
 let tab3=Array.from(document.getElementsByClassName('tab3'));
+let tab4=Array.from(document.getElementsByClassName('tab4'));
+let tab5=Array.from(document.getElementsByClassName('tab5'));
+let tab6=Array.from(document.getElementsByClassName('tab6'));
 let tabContent=Array.from(document.getElementsByClassName('tab-content'));
 let tabContent2=Array.from(document.getElementsByClassName('tab-content2'));
+let tabContent4=Array.from(document.getElementsByClassName('tab-content4'));
+let tabContent5=Array.from(document.getElementsByClassName('tab-content5'));
+let tabContent6=Array.from(document.getElementsByClassName('tab-content6'));
 let openDropdown=Array.from(document.getElementsByClassName('openDropdown'));
 let dropdown=Array.from(document.getElementsByClassName('dropdown'));
 
@@ -74,6 +80,59 @@ tab3.forEach((tab) => {
     tab.classList.add('active');
       let tabId = tab.dataset.id;
       tabContent2.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('d-none');
+              content.classList.add('d-block');
+          } else {
+            content.classList.add('d-none');
+            content.classList.remove('d-block');
+          }
+      })
+  })
+})
+
+tab4.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    tab4.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      tabContent4.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('d-none');
+              content.classList.add('d-block');
+          } else {
+            content.classList.add('d-none');
+            content.classList.remove('d-block');
+          }
+      })
+  })
+})
+tab5.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    tab5.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      tabContent5.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('d-none');
+              content.classList.add('d-block');
+          } else {
+            content.classList.add('d-none');
+            content.classList.remove('d-block');
+          }
+      })
+  })
+})
+
+tab6.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    tab6.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      tabContent6.forEach((content) => {
           let contentId = content.dataset.id;
           if (tabId === contentId) {
               content.classList.remove('d-none');

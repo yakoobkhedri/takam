@@ -108,6 +108,9 @@ a {
 .h-30{
     height: 30px;
 }
+.h-35{
+    height: 35px;
+}
 .h-48{
     height: 48px;
 }
@@ -331,11 +334,27 @@ a {
     background-color: white;
     border: 1px solid lightgray;
 }
-.tab3.active{
+.tab3.active,.tab4.active,.tab5.active,.tab6.active{
    color: #db5f19;
 }
 .dropdown.active{
     display: flex!important;
+}
+/* pagination */
+.pagination li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #db5f19;
+    transition: all .4s;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination li a:hover,.pagination li a.active{
+  background-color: #db5f19;
+  color: white!important;
 }
 /* responsive */
 @media only screen and (max-width:1400px) {
