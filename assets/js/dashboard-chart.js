@@ -109,7 +109,7 @@ setInterval(() => {
 }, 3000);
 
 
-// درصد تحقق اقدامات
+// درصد تحقق کارها
 
 
 Highcharts.chart('gauge2', {
@@ -124,7 +124,7 @@ Highcharts.chart('gauge2', {
     },
 
     title: {
-        text: 'درصد تحقق اقدامات'
+        text: 'درصد تحقق کارها'
     },
 
     pane: {

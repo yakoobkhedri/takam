@@ -19,8 +19,8 @@ let tab2=Array.from(document.getElementsByClassName('tab2'));
 let tab3=Array.from(document.getElementsByClassName('tab3'));
 let tabContent=Array.from(document.getElementsByClassName('tab-content'));
 let tabContent2=Array.from(document.getElementsByClassName('tab-content2'));
-let openDropdown=document.getElementById('openDropdown');
-let dropdown=document.getElementById('dropdown');
+let openDropdown=Array.from(document.getElementsByClassName('openDropdown'));
+let dropdown=Array.from(document.getElementsByClassName('dropdown'));
 
 dropdownBtn.forEach((item)=>{
   item.addEventListener('click',function () {
@@ -29,8 +29,20 @@ dropdownBtn.forEach((item)=>{
   })
 })
 
-openDropdown.addEventListener('click',function () {
-  dropdown.classList.toggle('active');
+openDropdown.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    tabs.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      dropdown.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+      })
+  })
 })
 tab2.forEach((tab) => {
   tab.addEventListener('click', function() {

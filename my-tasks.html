@@ -372,14 +372,47 @@
           <div class="row g-0 mx-0">
             <div class="col-xl-7 col-lg-8">
               <div class="d-flex flex-wrap flex-lg-nowrap fs-12 font-bold gap-3 align-items-center bg-gray p-3 p-lg-0 rounded-16 w-100 text-center  ">
-                <p data-id="1" id="openDropdown"
-                  class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab">مجری کار</p>
-                <p data-id="2" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab tab2">کارفرما</p>
-                <p data-id="3" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab tab2">کارهای اشتراکی</p>
-                <p data-id="4" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab tab2">فعالیت ها</p>
+                <p data-id="1"
+                  class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab openDropdown">مجری کار</p>
+                <p data-id="2" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab openDropdown">کارفرما</p>
+                <p data-id="3" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab openDropdown">کارهای اشتراکی</p>
+                <p data-id="4" class="mb-0 rounded-16 py-2 px-4 cursor-pointer flex-grow-1 tab openDropdown">اجرائی</p>
               </div>
-              <ul id="dropdown"
-                class="list-unstyled flex-wrap shadow-sm rounded-5 mt-2 bg-white font-bold p-3 mb-0 d-none  align-items-center gap-3 fs-14">
+              <ul data-id="1"
+                class="list-unstyled dropdown flex-wrap shadow-sm rounded-5 mt-2 bg-white font-bold p-3 mb-0 d-none  align-items-center gap-3 fs-14">
+                <li data-id="1" class="flex-grow-1 tab3 cursor-pointer">کارهای جدید <span
+                    class="badge bg-orange d-inline-block me-1 ">2</span></li>
+                <li data-id="2" class="flex-grow-1 tab3 cursor-pointer">کارهای در حال انجام <span
+                    class="badge bg-orange d-inline-block me-1 ">3</span></li>
+                <li data-id="3" class="flex-grow-1 tab3 cursor-pointer">کارهای انجام شده <span
+                    class="badge bg-orange d-inline-block me-1 ">1</span></li>
+                <li data-id="4" class="flex-grow-1 tab3 cursor-pointer">همه کارها<span
+                    class="badge bg-orange d-inline-block me-1 ">5</span></li>
+              </ul>
+              <ul data-id="2"
+                class="list-unstyled dropdown flex-wrap shadow-sm rounded-5 mt-2 bg-white font-bold p-3 mb-0 d-none  align-items-center gap-3 fs-14">
+                <li data-id="1" class="flex-grow-1 tab3 cursor-pointer">کارهای جدید <span
+                    class="badge bg-orange d-inline-block me-1 ">2</span></li>
+                <li data-id="2" class="flex-grow-1 tab3 cursor-pointer">کارهای در حال انجام <span
+                    class="badge bg-orange d-inline-block me-1 ">3</span></li>
+                <li data-id="3" class="flex-grow-1 tab3 cursor-pointer">کارهای انجام شده <span
+                    class="badge bg-orange d-inline-block me-1 ">1</span></li>
+                <li data-id="4" class="flex-grow-1 tab3 cursor-pointer">همه کارها<span
+                    class="badge bg-orange d-inline-block me-1 ">5</span></li>
+              </ul>
+              <ul data-id="3"
+                class="list-unstyled dropdown flex-wrap shadow-sm rounded-5 mt-2 bg-white font-bold p-3 mb-0 d-none  align-items-center gap-3 fs-14">
+                <li data-id="1" class="flex-grow-1 tab3 cursor-pointer">کارهای جدید <span
+                    class="badge bg-orange d-inline-block me-1 ">2</span></li>
+                <li data-id="2" class="flex-grow-1 tab3 cursor-pointer">کارهای در حال انجام <span
+                    class="badge bg-orange d-inline-block me-1 ">3</span></li>
+                <li data-id="3" class="flex-grow-1 tab3 cursor-pointer">کارهای انجام شده <span
+                    class="badge bg-orange d-inline-block me-1 ">1</span></li>
+                <li data-id="4" class="flex-grow-1 tab3 cursor-pointer">همه کارها<span
+                    class="badge bg-orange d-inline-block me-1 ">5</span></li>
+              </ul>
+              <ul data-id="4"
+                class="list-unstyled dropdown flex-wrap shadow-sm rounded-5 mt-2 bg-white font-bold p-3 mb-0 d-none  align-items-center gap-3 fs-14">
                 <li data-id="1" class="flex-grow-1 tab3 cursor-pointer">کارهای جدید <span
                     class="badge bg-orange d-inline-block me-1 ">2</span></li>
                 <li data-id="2" class="flex-grow-1 tab3 cursor-pointer">کارهای در حال انجام <span
@@ -686,9 +719,885 @@
                     </table>
                 </div>
               </div>
-              <div class="tab-content d-none " data-id="2">کارفرما</div>
-              <div class="tab-content d-none " data-id="3">کارهای اشتراکی</div>
-              <div class="tab-content d-none " data-id="4">فعالیت ها</div>
+              <div class="tab-content d-none " data-id="2">
+                <div data-id="1" class="table-responsive tab-content3 d-none">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="2" class="table-responsive tab-content3 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="3" class="table-responsive tab-content3 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="4" class="table-responsive tab-content3 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              </div>
+              <div class="tab-content d-none " data-id="3">
+                <div data-id="1" class="table-responsive tab-content4 d-none">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="2" class="table-responsive tab-content4 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="3" class="table-responsive tab-content4 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="4" class="table-responsive tab-content4 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              </div>
+              <div class="tab-content d-none " data-id="4">
+                <div data-id="1" class="table-responsive tab-content5 d-none">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="2" class="table-responsive tab-content5 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="3" class="table-responsive tab-content5 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div data-id="4" class="table-responsive tab-content5 d-none ">
+                  <table
+                  class="table table-bordered table-striped table-hover text-center fs-12">
+                  <thead class="bg-orange text-white">
+                    <tr>
+                      <th>ردیف</th>
+                      <th>شرکت</th>
+                      <th>کارگاه</th>
+                      <th>کار فرما</th>
+                      <th>عنوان</th>
+                      <th>فایل</th>
+                      <th>تاریخ درج</th>
+                      <th>وضعیت</th>
+                      <th>تاریخ پایان</th>
+                      <th>ساعت کاری</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                    <tr>
+                      <td>۱</td>
+                      <td>هیتا</td>
+
+                      <td>سایت هیتا</td>
+                      <td>بلال رستمی</td>
+
+                      <td>
+                        <a> 
+                          تبدیل
+                          فایل فیگما صفحات جدید و وبرایش صفحات قبلی به html , css , javascript
+                        </a>
+                        </td>
+                      <td>
+                        <p>ندارد</p>
+                      </td>
+                      <td>۱۳:۳۰--۱۴۰۲/۱۰/۲۶</td>
+                      <td>
+                        <p>انجام شد</p>
+                      </td>
+                      <td>۱۴۰۲/۱۰/۳۰</td>
+                      <td>۲۲ ساعت</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+              </div>
             </div>
           </div>
         </div>
