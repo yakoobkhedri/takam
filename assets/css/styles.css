@@ -229,6 +229,12 @@ a {
 .right-auto{
     right: auto!important;
 }
+.-right-35{
+    right: -35px!important;
+}
+.-right-93{
+    right: -93px!important;
+}
 /* bottom */
 .-bottom-8{
     bottom: -8px!important;
@@ -238,6 +244,9 @@ a {
     left: auto!important;
 }
 /* padding */
+.pt-34{
+    padding-top: 34px!important;
+}
 .pt-256{
     padding-top: 256px;
 }
@@ -340,6 +349,13 @@ a {
 .dropdown.active{
     display: flex!important;
 }
+/* form select */
+.form-select {
+    background-position: left .75rem center;
+}
+.form-floating > label {
+ right: 0;
+}
 /* pagination */
 .pagination li{
     width: 30px;
@@ -394,6 +410,9 @@ a {
  }
  .w-sm-95{
     width: 95px;
+ }
+ .-right-sm-35{
+    right: -35px!important;
  }
 }
 
