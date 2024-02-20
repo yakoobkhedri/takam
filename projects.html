@@ -258,6 +258,91 @@
       </div>
     </div>
 
+      <!-- payProject Modal -->
+<div class="modal fade" id="payProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered max-w-591">
+    <form class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پرژه:<span class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+        <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="submit" value="افزودن" class="btn btn-success mx-auto d-block">
+        <div class="row g-3 mx-0 mt-0">
+          <div class="col-sm-6">
+            <div class="form-floating">
+              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان صورت وضعیت">
+              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان صورت وضعیت</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating">
+              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره فاکتور">
+              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره فاکتور</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row gy-3 mx-0">
+              <p class="mb-0 fs-14 font-bold">فازهای پروژه مربوط به این صورت وضعیت را انتخاب کنید</p>
+              <div class="col-6">
+                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                   <input type="checkbox" class="form-check-input cursor-pointer">
+                   <p class="mb-0">طراحی لوگو و ملزومات</p>
+                 </label>             
+              </div>
+              <div class="col-6">
+                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                   <input type="checkbox" class="form-check-input cursor-pointer">
+                   <p class="mb-0">توسعه سامانه</p>
+                 </label>             
+              </div>
+              <div class="col-6">
+                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                   <input type="checkbox" class="form-check-input cursor-pointer">
+                   <p class="mb-0">طراحی مدل مفهومی</p>
+                 </label>             
+              </div>
+              <div class="col-6">
+                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                   <input type="checkbox" class="form-check-input cursor-pointer">
+                   <p class="mb-0">تکمیل بارگذاری مدل</p>
+                 </label>             
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating">
+              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="مبلغ (تومان)">
+              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ (تومان)</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating">
+              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="درصد از کل پروژه">
+              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">درصد از کل پروژه</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating">
+              <input type="date" class="form-control border-main" id="floatingInputValue" value="تاریخ درج صورت وضعیت">
+              <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ درج صورت وضعیت</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating">
+              <input type="date" class="form-control border-main" id="floatingInputValue" value="تاریخ پیش بینی پرداخت">
+              <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ پیش بینی پرداخت</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center ">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+      </div>
+    </form>
+  </div>
+</div>
+
   <!-- overlay -->
   <div id="overlay" class="position-fixed end-0 start-0 bottom-0 top-0"></div>
   <!-- <img src="assets/img/111.png"> -->
@@ -664,7 +749,7 @@
                 <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
               </td>
               <td>
-                <p class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
               </td>
               <td>0</td>
               <td>50,000,000</td>
@@ -688,7 +773,7 @@
                 <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
               </td>
               <td>
-                <p class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
               </td>
               <td>0</td>
               <td>50,000,000</td>
@@ -712,7 +797,7 @@
                 <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
               </td>
               <td>
-                <p class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
               </td>
               <td>0</td>
               <td>50,000,000</td>
@@ -736,7 +821,7 @@
                 <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
               </td>
               <td>
-                <p class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
               </td>
               <td>0</td>
               <td>50,000,000</td>
@@ -760,7 +845,7 @@
                 <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
               </td>
               <td>
-                <p class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
               </td>
               <td>0</td>
               <td>50,000,000</td>
@@ -784,7 +869,7 @@
                 <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
               </td>
               <td>
-                <p class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
               </td>
               <td>0</td>
               <td>50,000,000</td>
