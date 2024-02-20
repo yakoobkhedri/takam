@@ -349,12 +349,16 @@ a {
 .dropdown.active{
     display: flex!important;
 }
-/* form select */
+/* form input */
 .form-select {
     background-position: left .75rem center;
 }
 .form-floating > label {
  right: 0;
+}
+.form-check-input:checked {
+    background-color: #db5f19;
+    border-color: #db5f19;
 }
 /* pagination */
 .pagination li{
