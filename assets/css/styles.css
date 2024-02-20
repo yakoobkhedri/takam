@@ -412,6 +412,9 @@ a {
  .fs-sm-11{
     font-size: 11px;
  }
+ .w-sm-100{
+    width: 100%;
+ }
  .w-sm-95{
     width: 95px;
  }
