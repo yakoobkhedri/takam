@@ -456,6 +456,74 @@
     </div>
   </div>
 
+   <!-- payProject2 Modal -->
+   <div class="modal fade" id="payProject2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-591">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span
+              class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <a data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-success d-table mx-auto fw-bold fs-14">افزودن صورت وضعیت جدید</a>
+          <div class="mt-3 fs-12">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <p class="mb-0 fw-bold text-primary">شرکت ماهور</p>
+              <p data-bs-dismiss="modal" class="mb-0 btn btn-sm btn-warning">بستن</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">شماره فاکتور:</p>
+               <p class="mb-0 fw-bold">654893</p>
+              </div>
+              <div class="rounded-circle w-35 h-35 bg-purple text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">تاریخ پیش بینی پرداخت:</p>
+               <p class="mb-0 fw-bold">1403/12/01</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">مبلغ:</p>
+               <p class="mb-0 fw-bold">450,000 تومان</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">فازهای مربوطه:</p>
+               <p class="mb-0 fw-bold">654893</p>
+              </div>
+              <div class="fw-bold">1402/12/01</div>
+            </div>
+            <div class="rounded-4 p-3 border-main">
+              <div class="d-flex align-items-start justify-content-between gap-2 mb-3 flex-wrap">
+                <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
+                  <p class="mb-0 fw-bold flex-shrink-0">تاریخ پرداخت:</p>
+                  <input type="date" class="w-100 p-2">
+               </div>
+              <div class="flex-grow-1 w-100">
+                <div class="d-flex align-items-center gap-2">
+                  <p class="mb-0 fw-bold flex-shrink-0">فیش واریزی:</p>
+                  <input type="file" class="w-100 p-2">
+                 </div>
+                 <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
+              </div>
+              </div>
+              <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success w-100">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center ">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- payProject Modal -->
   <div class="modal fade" id="payProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
@@ -1028,7 +1096,7 @@
                   </td>
                   <td>طراحی جایزه BPME</td>
                   <td>
-                    50,000,000
+                    450,000
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
@@ -1039,11 +1107,14 @@
                       class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
                   </td>
                   <td>
-                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                    <p
+                      class="btn bg-purple text-white py-2 rounded-4 fs-12 font-bold mb-0">450,000</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProject2Modal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">450,000</p>
                   </td>
                   <td>0</td>
-                  <td>50,000,000</td>
                 </tr>
                 <tr>
                   <td>۱</td>
