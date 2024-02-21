@@ -86,8 +86,14 @@ a {
 .w-30{
     width: 30px;
 }
+.w-35{
+    width: 35px;
+}
 .w-48{
     width: 48px;
+}
+.w-90{
+    width: 90px;
 }
 .w-101{
     width: 101px;
@@ -375,6 +381,15 @@ a {
 .pagination li a:hover,.pagination li a.active{
   background-color: #db5f19;
   color: white!important;
+}
+/* input number */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
 }
 /* responsive */
 @media only screen and (max-width:1400px) {
