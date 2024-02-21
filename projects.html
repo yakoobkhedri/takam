@@ -17,151 +17,187 @@
 <body>
 
   <!-- addProject Modal -->
-<div class="modal fade" id="addProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered max-w-591">
-    <form class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن پروژه جدید</h1>
-        <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p class="mb-0 fs-14 font-bold">کاربر گرامی لطفا اطلاعات درخواستی پروژه را با دقت وارد کنید.</p>
-        <div class="row g-3 mx-0 mt-0">
-          <div class="col-sm-6">
-           <div class="form-floating">
-            <select class="form-select border-main border-main" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>شرکت هیتا</option>
-              <option value="1">شرکت آرا</option>
-              <option value="2">شرکت اهورا</option>
-            </select>
-            <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">شرکت مجری پروژه را انتخاب کنید</label>
-          </div>
-          </div>
-          <div class="col-sm-6">
-           <div class="form-floating">
-            <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>شرکت هیتا</option>
-              <option value="1">شرکت آرا</option>
-              <option value="2">شرکت اهورا</option>
-            </select>
-            <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نام شرکت کارفرما</label>
-          </div>
-          </div>
-          <div class="col-sm-6">
-           <div class="form-floating">
-            <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>نماد (حروف بزرگ)</option>
-              <option value="1">نماد (حروف کوچک)</option>
-            </select>
-            <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نماد (انگلیسی)</label>
-          </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان پروژه">
-              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان پروژه</label>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="date" class="form-control border-main" id="floatingInputValue" value="عنوان پروژه">
-              <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ انعقاد قرارداد</label>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان پروژه">
-              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ کل قرارداد(تومان)</label>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-floating">
-              <input type="file" class="form-control form-control-sm pt-34 border-main" id="floatingInputValue" placeholder="عنوان پروژه">
-              <label class="-right-93 -right-sm-35 fs-14 font-bold text-orange" for="floatingInputValue">فایل قرارداد پروژه</label>
-              <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت قرارداد پروژه حتما باید jpeg,png یا pdf باشد.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer justify-content-center ">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
-        <button type="button" class="btn btn-success">ثبت</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-  <!-- teamProject Modal -->
-  <div class="modal fade" id="teamProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="addProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن پروژه جدید</h1>
+          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
+            aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p class="mb-0 fs-12 font-bold">در لیست زیر با تیک زدن و برداشتن تیک می توانید به تیم پروژه اضافه و کم کنید، بعد از ویرایش تیم مورد نظر دکمه بستن لیست را اعمال نمایید.</p>
-          <input type="submit" class="btn btn-success btn-sm mx-auto d-block my-3" value="بستن لیست">
-          <div class="row gy-3 p-2 mx-0 mt-0 border-main">
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+          <p class="mb-0 fs-14 font-bold">کاربر گرامی لطفا اطلاعات درخواستی پروژه را با دقت وارد کنید.</p>
+          <div class="row g-3 mx-0 mt-0">
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <select class="form-select border-main border-main" id="floatingSelect"
+                  aria-label="Floating label select example">
+                  <option selected>شرکت هیتا</option>
+                  <option value="1">شرکت آرا</option>
+                  <option value="2">شرکت اهورا</option>
+                </select>
+                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">شرکت مجری پروژه را انتخاب
+                  کنید</label>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>شرکت هیتا</option>
+                  <option value="1">شرکت آرا</option>
+                  <option value="2">شرکت اهورا</option>
+                </select>
+                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نام شرکت کارفرما</label>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>نماد (حروف بزرگ)</option>
+                  <option value="1">نماد (حروف کوچک)</option>
+                </select>
+                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نماد (انگلیسی)</label>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان پروژه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان پروژه</label>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="date" class="form-control border-main" id="floatingInputValue" value="عنوان پروژه">
+                <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ انعقاد
+                  قرارداد</label>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان پروژه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ کل قرارداد(تومان)</label>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <div class="col-12">
+              <div class="form-floating">
+                <input type="file" class="form-control form-control-sm pt-34 border-main" id="floatingInputValue"
+                  placeholder="عنوان پروژه">
+                <label class="-right-93 -right-sm-35 fs-14 font-bold text-orange" for="floatingInputValue">فایل قرارداد
+                  پروژه</label>
+                <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت قرارداد پروژه حتما باید jpeg,png یا pdf
+                  باشد.</small>
+              </div>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center ">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+          <button type="button" class="btn btn-success">ثبت</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+   <!-- teamListProject Modal -->
+   <div class="modal fade" id="teamListProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-591">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span
+              class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0 fs-12 font-bold">برای اضافه و حذف کردن نفر به تیم پروژه بر روی دکمه زیر کلیک کنید</p>
+          <div data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success btn-sm mx-auto d-table my-3">اضافه و حذف کردن نفرات تیم پروژه</div>
+          <div class="bg-danger text-white fw-bold p-2 fs-14 text-center">هنوز تیم پروژه انتخاب نشده است</div>
+          <div class="mt-3">
+            <p class="mb-2 fs-12 font-bold">در لیست زیر شرکت مجری پروژه را مشاهده می کنید</p>
+            <div class="table-responsive w-100">
+              <table class="w-100 text-center border-main">
+                <thead class="bg-orange text-white fs-14">
+                  <tr>
+                    <th class="py-2">نام شرکت مجری پروژه</th>
+                    <th class="py-2">سهم شرکت از پروژه(درصد)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-main py-2 fw-bold">ماهور</td>
+                    <td class="fs-12 font-bold border-main py-2">
+                      <div class="d-flex align-items-center justify-content-around gap-2">
+                        <p class="mb-0">0%</p>
+                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
-            </div>
-            <div class="col-sm-4 col-6">
-               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                 <input type="checkbox" class="form-check-input cursor-pointer">
-                 <p class="mb-0">بلال رستمی</p>
-               </label>             
+            <p class="mb-2 mt-3 fs-12 font-bold">در لیست زیر اسامی افراد تیم پروژه را مشاهده می کنید</p>
+            <div class="table-responsive w-100">
+              <table class="w-100 text-center border-main">
+                <thead class="bg-orange text-white fs-14">
+                  <tr>
+                    <th class="py-2">ردیف</th>
+                    <th class="py-2">نام و نام خانوادگی</th>
+                    <th class="py-2">سهم از پروژه(درصد)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-main py-2 fw-bold">1</td>
+                    <td class="border-main py-2 fw-bold">علیرضا بطحائی</td>
+                    <td class="fs-12 font-bold border-main py-2">
+                      <div class="d-flex align-items-center justify-content-around gap-2">
+                        <p class="mb-0">0%</p>
+                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-main py-2 fw-bold">1</td>
+                    <td class="border-main py-2 fw-bold">علیرضا بطحائی</td>
+                    <td class="fs-12 font-bold border-main py-2">
+                      <div class="d-flex align-items-center justify-content-around gap-2">
+                        <p class="mb-0">0%</p>
+                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-main py-2 fw-bold">1</td>
+                    <td class="border-main py-2 fw-bold">علیرضا بطحائی</td>
+                    <td class="fs-12 font-bold border-main py-2">
+                      <div class="d-flex align-items-center justify-content-around gap-2">
+                        <p class="mb-0">0%</p>
+                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-main py-2 fw-bold">1</td>
+                    <td class="border-main py-2 fw-bold">علیرضا بطحائی</td>
+                    <td class="fs-12 font-bold border-main py-2">
+                      <div class="d-flex align-items-center justify-content-around gap-2">
+                        <p class="mb-0">0%</p>
+                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-main py-2 fw-bold">1</td>
+                    <td class="border-main py-2 fw-bold">علیرضا بطحائی</td>
+                    <td class="fs-12 font-bold border-main py-2">
+                      <div class="d-flex align-items-center justify-content-around gap-2">
+                        <p class="mb-0">0%</p>
+                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -172,25 +208,113 @@
     </div>
   </div>
 
-    <!-- faseProject Modal -->
-    <div class="modal fade" id="faseProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered max-w-591">
-        <form class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">فازهای پروژه:<span class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-            <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="mb-0 fs-12 font-bold">برای اضافه کردن فاز به پروژه عنوان فاز را وارد کرده و دکمه ی افزودن را اعمال نمایید</p>
-            <div class="d-flex flex-column flex-sm-row align-items-start justify-content-center w-100 gap-2 my-3">
-              <div class="w-100">
-                <input placeholder="عنوان فاز را وارد کنید" class="bg-transparent w-100 p-2 fs-14 flex-grow-1 outline-none border-main rounded-4">
-                <small class="font-bold fs-12 text-orange">این فیلد اجباری است</small>
-              </div>
-              <input type="submit" value="افزودن" class="btn btn-success flex-grow-1 w-sm-100">
+  <!-- teamProject Modal -->
+  <div class="modal fade" id="teamProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-591">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span
+              class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0 fs-12 font-bold">در لیست زیر با تیک زدن و برداشتن تیک می توانید به تیم پروژه اضافه و کم کنید،
+            بعد از ویرایش تیم مورد نظر دکمه بستن لیست را اعمال نمایید.</p>
+          <a data-bs-dismiss="modal" aria-label="Close" class="btn btn-success btn-sm mx-auto d-table my-3">بستن لیست</a>
+          <div class="row gy-3 p-2 mx-0 mt-0 border-main">
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
             </div>
-            <div class="table-responsive w-100">
-              <table class="w-100 text-center border-main">
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+            <div class="col-sm-4 col-6">
+              <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer">
+                <p class="mb-0">بلال رستمی</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">برگشت</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- faseProject Modal -->
+  <div class="modal fade" id="faseProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-591">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">فازهای پروژه:<span
+              class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0 fs-12 font-bold">برای اضافه کردن فاز به پروژه عنوان فاز را وارد کرده و دکمه ی افزودن را اعمال
+            نمایید</p>
+          <div class="d-flex flex-column flex-sm-row align-items-start justify-content-center w-100 gap-2 my-3">
+            <div class="w-100">
+              <input placeholder="عنوان فاز را وارد کنید"
+                class="bg-transparent w-100 p-2 fs-14 flex-grow-1 outline-none border-main rounded-4">
+              <small class="font-bold fs-12 text-orange">این فیلد اجباری است</small>
+            </div>
+            <input type="submit" value="افزودن" class="btn btn-success flex-grow-1 w-sm-100">
+          </div>
+          <div class="table-responsive w-100">
+            <table class="w-100 text-center border-main">
               <thead class="bg-orange text-white">
                 <tr>
                   <th>ردیف</th>
@@ -204,9 +328,12 @@
                   <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
                   <td class="border-main py-2">
                     <a class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trash" viewBox="0 0 16 16">
+                        <path
+                          d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                        <path
+                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
                       </svg>
                     </a>
                   </td>
@@ -216,9 +343,12 @@
                   <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
                   <td class="border-main py-2">
                     <a class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trash" viewBox="0 0 16 16">
+                        <path
+                          d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                        <path
+                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
                       </svg>
                     </a>
                   </td>
@@ -228,9 +358,12 @@
                   <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
                   <td class="border-main py-2">
                     <a class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trash" viewBox="0 0 16 16">
+                        <path
+                          d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                        <path
+                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
                       </svg>
                     </a>
                   </td>
@@ -240,108 +373,119 @@
                   <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
                   <td class="border-main py-2">
                     <a class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trash" viewBox="0 0 16 16">
+                        <path
+                          d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                        <path
+                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
                       </svg>
                     </a>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </div>
           </div>
-          <div class="modal-footer justify-content-center ">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">برگشت</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="modal-footer justify-content-center ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">برگشت</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-      <!-- payProject Modal -->
-<div class="modal fade" id="payProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered max-w-591">
-    <form class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-        <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="submit" value="افزودن" class="btn btn-success mx-auto d-block">
-        <div class="row g-3 mx-0 mt-0">
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان صورت وضعیت">
-              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان صورت وضعیت</label>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره فاکتور">
-              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره فاکتور</label>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="row gy-3 mx-0">
-              <p class="mb-0 fs-14 font-bold">فازهای پروژه مربوط به این صورت وضعیت را انتخاب کنید</p>
-              <div class="col-6">
-                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                   <input type="checkbox" class="form-check-input cursor-pointer">
-                   <p class="mb-0">طراحی لوگو و ملزومات</p>
-                 </label>             
-              </div>
-              <div class="col-6">
-                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                   <input type="checkbox" class="form-check-input cursor-pointer">
-                   <p class="mb-0">توسعه سامانه</p>
-                 </label>             
-              </div>
-              <div class="col-6">
-                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                   <input type="checkbox" class="form-check-input cursor-pointer">
-                   <p class="mb-0">طراحی مدل مفهومی</p>
-                 </label>             
-              </div>
-              <div class="col-6">
-                 <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                   <input type="checkbox" class="form-check-input cursor-pointer">
-                   <p class="mb-0">تکمیل بارگذاری مدل</p>
-                 </label>             
+  <!-- payProject Modal -->
+  <div class="modal fade" id="payProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-591">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span
+              class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="submit" value="افزودن" class="btn btn-success mx-auto d-block">
+          <div class="row g-3 mx-0 mt-0">
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue"
+                  placeholder="عنوان صورت وضعیت">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان صورت وضعیت</label>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="مبلغ (تومان)">
-              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ (تومان)</label>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره فاکتور">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره فاکتور</label>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="درصد از کل پروژه">
-              <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">درصد از کل پروژه</label>
+            <div class="col-12">
+              <div class="row gy-3 mx-0">
+                <p class="mb-0 fs-14 font-bold">فازهای پروژه مربوط به این صورت وضعیت را انتخاب کنید</p>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">طراحی لوگو و ملزومات</p>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">توسعه سامانه</p>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">طراحی مدل مفهومی</p>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">تکمیل بارگذاری مدل</p>
+                  </label>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="date" class="form-control border-main" id="floatingInputValue" value="تاریخ درج صورت وضعیت">
-              <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ درج صورت وضعیت</label>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="مبلغ (تومان)">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ (تومان)</label>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-floating">
-              <input type="date" class="form-control border-main" id="floatingInputValue" value="تاریخ پیش بینی پرداخت">
-              <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ پیش بینی پرداخت</label>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue"
+                  placeholder="درصد از کل پروژه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">درصد از کل پروژه</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="date" class="form-control border-main" id="floatingInputValue"
+                  value="تاریخ درج صورت وضعیت">
+                <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ درج صورت
+                  وضعیت</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="date" class="form-control border-main" id="floatingInputValue"
+                  value="تاریخ پیش بینی پرداخت">
+                <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ پیش بینی
+                  پرداخت</label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer justify-content-center ">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
-      </div>
-    </form>
+        <div class="modal-footer justify-content-center ">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
   <!-- overlay -->
   <div id="overlay" class="position-fixed end-0 start-0 bottom-0 top-0"></div>
@@ -693,10 +837,12 @@
           </div>
         </div>
         <div class="py-4 px-3">
-          <a data-bs-toggle="modal" data-bs-target="#addProjectModal" class="btn-success rounded-4 py-2 px-4 text-white font-bold fs-14 d-table mx-auto">افزودن پروژه جدید</a>
+          <a data-bs-toggle="modal" data-bs-target="#addProjectModal"
+            class="btn-success rounded-4 py-2 px-4 text-white font-bold fs-14 d-table mx-auto">افزودن پروژه جدید</a>
           <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-3 mt-4">
             <form class="d-flex align-items-center px-2 gap-1 border-main h-35 rounded-8">
-              <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.4143 11L14.9142 14.5" stroke="#db5f19" stroke-width="2" stroke-linecap="round"></path>
                 <circle cx="6.5" cy="6.5" r="6" fill="#F2F2F2" stroke="#db5f19"></circle>
               </svg>
@@ -713,168 +859,185 @@
             </div>
           </div>
           <div class="table-responsive">
-            <table
-          class="table table-bordered table-striped table-hover text-center fs-12">
-          <thead class="bg-orange text-white">
-            <tr>
-              <th>ردیف</th>
-              <th>شرکت(مجری)</th>
-              <th>شرکت(کارفرما)</th>
-              <th>عنوان پروژه</th>
-              <th>مبلغ کل پروژه(تومان)</th>
-              <th>تیم پروژه و سهمیه بندی</th>
-              <th>فازهای پروژه</th>
-              <th>مبلغ صورت وضعیت(تومان)</th>
-              <th>کل مبلغ پرداختی(تومان)</th>
-              <th>مانده حساب از کل مبلغ(تومان)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>۱</td>
-              <td>ماهور</td>
-              <td>
-                <a> 
-                  شرکت توسعه کسب و کار ماهور (MO)
-                </a>
-              </td>
-              <td>طراحی جایزه BPME</td>
-              <td>
-               50,000,000  
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
-              </td>
-              <td>0</td>
-              <td>50,000,000</td>
-            </tr>
-            <tr>
-              <td>۱</td>
-              <td>ماهور</td>
-              <td>
-                <a> 
-                  شرکت توسعه کسب و کار ماهور (MO)
-                </a>
-              </td>
-              <td>طراحی جایزه BPME</td>
-              <td>
-               50,000,000  
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
-              </td>
-              <td>0</td>
-              <td>50,000,000</td>
-            </tr>
-            <tr>
-              <td>۱</td>
-              <td>ماهور</td>
-              <td>
-                <a> 
-                  شرکت توسعه کسب و کار ماهور (MO)
-                </a>
-              </td>
-              <td>طراحی جایزه BPME</td>
-              <td>
-               50,000,000  
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
-              </td>
-              <td>0</td>
-              <td>50,000,000</td>
-            </tr>
-            <tr>
-              <td>۱</td>
-              <td>ماهور</td>
-              <td>
-                <a> 
-                  شرکت توسعه کسب و کار ماهور (MO)
-                </a>
-              </td>
-              <td>طراحی جایزه BPME</td>
-              <td>
-               50,000,000  
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
-              </td>
-              <td>0</td>
-              <td>50,000,000</td>
-            </tr>
-            <tr>
-              <td>۱</td>
-              <td>ماهور</td>
-              <td>
-                <a> 
-                  شرکت توسعه کسب و کار ماهور (MO)
-                </a>
-              </td>
-              <td>طراحی جایزه BPME</td>
-              <td>
-               50,000,000  
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
-              </td>
-              <td>0</td>
-              <td>50,000,000</td>
-            </tr>
-            <tr>
-              <td>۱</td>
-              <td>ماهور</td>
-              <td>
-                <a> 
-                  شرکت توسعه کسب و کار ماهور (MO)
-                </a>
-              </td>
-              <td>طراحی جایزه BPME</td>
-              <td>
-               50,000,000  
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#faseProjectModal" class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
-              </td>
-              <td>
-                <p data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
-              </td>
-              <td>0</td>
-              <td>50,000,000</td>
-            </tr>
-          </tbody>
+            <table class="table table-bordered table-striped table-hover text-center fs-12">
+              <thead class="bg-orange text-white">
+                <tr>
+                  <th>ردیف</th>
+                  <th>شرکت(مجری)</th>
+                  <th>شرکت(کارفرما)</th>
+                  <th>عنوان پروژه</th>
+                  <th>مبلغ کل پروژه(تومان)</th>
+                  <th>تیم پروژه و سهمیه بندی</th>
+                  <th>فازهای پروژه</th>
+                  <th>مبلغ صورت وضعیت(تومان)</th>
+                  <th>کل مبلغ پرداختی(تومان)</th>
+                  <th>مانده حساب از کل مبلغ(تومان)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>۱</td>
+                  <td>ماهور</td>
+                  <td>
+                    <a>
+                      شرکت توسعه کسب و کار ماهور (MO)
+                    </a>
+                  </td>
+                  <td>طراحی جایزه BPME</td>
+                  <td>
+                    50,000,000
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
+                      class="btn btn-warning text-white py-2 rounded-4 fs-12 font-bold mb-0">نامشخص</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
+                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                  </td>
+                  <td>0</td>
+                  <td>50,000,000</td>
+                </tr>
+                <tr>
+                  <td>۱</td>
+                  <td>ماهور</td>
+                  <td>
+                    <a>
+                      شرکت توسعه کسب و کار ماهور (MO)
+                    </a>
+                  </td>
+                  <td>طراحی جایزه BPME</td>
+                  <td>
+                    50,000,000
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#teamProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
+                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                  </td>
+                  <td>0</td>
+                  <td>50,000,000</td>
+                </tr>
+                <tr>
+                  <td>۱</td>
+                  <td>ماهور</td>
+                  <td>
+                    <a>
+                      شرکت توسعه کسب و کار ماهور (MO)
+                    </a>
+                  </td>
+                  <td>طراحی جایزه BPME</td>
+                  <td>
+                    50,000,000
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#teamProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
+                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                  </td>
+                  <td>0</td>
+                  <td>50,000,000</td>
+                </tr>
+                <tr>
+                  <td>۱</td>
+                  <td>ماهور</td>
+                  <td>
+                    <a>
+                      شرکت توسعه کسب و کار ماهور (MO)
+                    </a>
+                  </td>
+                  <td>طراحی جایزه BPME</td>
+                  <td>
+                    50,000,000
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#teamProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
+                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                  </td>
+                  <td>0</td>
+                  <td>50,000,000</td>
+                </tr>
+                <tr>
+                  <td>۱</td>
+                  <td>ماهور</td>
+                  <td>
+                    <a>
+                      شرکت توسعه کسب و کار ماهور (MO)
+                    </a>
+                  </td>
+                  <td>طراحی جایزه BPME</td>
+                  <td>
+                    50,000,000
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#teamProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
+                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                  </td>
+                  <td>0</td>
+                  <td>50,000,000</td>
+                </tr>
+                <tr>
+                  <td>۱</td>
+                  <td>ماهور</td>
+                  <td>
+                    <a>
+                      شرکت توسعه کسب و کار ماهور (MO)
+                    </a>
+                  </td>
+                  <td>طراحی جایزه BPME</td>
+                  <td>
+                    50,000,000
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#teamProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
+                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                  </td>
+                  <td>
+                    <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
+                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                  </td>
+                  <td>0</td>
+                  <td>50,000,000</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <ul class="mt-3 pagination pe-0 list-unstyled d-flex align-items-center justify-content-center gap-4">
