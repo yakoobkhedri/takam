@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "yekanBakh-Regular";
-    src: url('../fonts/YekanBakhFaNum-Regular.woff') format("woff");
+    font-family: "IRANSans-Regular";
+    src: url('../fonts/IRANSansXFaNum-Regular.woff') format("woff");
 }
 
 @font-face {
-    font-family: "yekanBakh-Bold";
-    src: url('../fonts/YekanBakhFaNum-Bold.woff') format("woff");
+    font-family: "IRANSans-Bold";
+    src: url('../fonts/IRANSansXFaNum-Bold.woff') format("woff");
 }
 
 html {
@@ -14,13 +14,13 @@ html {
 }
 
 body {
-    font-family: "yekanBakh-Regular";
+    font-family: "IRANSans-Regular";
     user-select: none;
     overflow-x: hidden;
 }
 
 .font-bold {
-    font-family: "yekanBakh-Bold";
+    font-family: "IRANSans-Bold";
 }
 
 a {
@@ -77,7 +77,7 @@ a {
     border: 2px solid #DB5F19;
 }
 .border-bottom--main{
-    border: 1px solid #DB5F19;
+    border: 1px solid #DB5F19!important;
 }
 /* width */
 .w-8{
@@ -323,7 +323,13 @@ a {
     /* scroll thumb and track */
     scroll-margin: 29px 0;
 }
-
+/* aside */
+aside li{
+    border-radius: 7px;
+}
+aside li:hover{
+    background-color: #f2f2f2;
+}
 /* dropdown */
 .dropdownBtn svg{
     transition: all .4s;
@@ -375,7 +381,6 @@ a {
     height: 30px;
     border: 1px solid #db5f19;
     transition: all .4s;
-    border-radius: 8px;
     overflow: hidden;
     display: flex;
     align-items: center;

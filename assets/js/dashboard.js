@@ -14,6 +14,7 @@ hamIcon.addEventListener('click',function () {
 // dropdown menu
 
 let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
+let dropdownContent=Array.from(document.getElementsByClassName('dropdownContent'));
 let tabs=Array.from(document.getElementsByClassName('tab'));
 let tab2=Array.from(document.getElementsByClassName('tab2'));
 let tab3=Array.from(document.getElementsByClassName('tab3'));
@@ -30,8 +31,16 @@ let dropdown=Array.from(document.getElementsByClassName('dropdown'));
 
 dropdownBtn.forEach((item)=>{
   item.addEventListener('click',function () {
-    item.nextElementSibling.classList.toggle('active');
-    item.querySelector('svg:last-child').classList.toggle('active')
+    dropdownBtn.forEach((item2)=>{
+      item2.querySelectorAll('svg:last-child').forEach((allsvg)=>{
+        allsvg.classList.remove('active')
+      })
+    })
+    dropdownContent.forEach((items)=>{
+      items.classList.remove('active');
+    })
+    item.nextElementSibling.classList.add('active');
+    item.querySelector('svg:last-child').classList.add('active')
   })
 })
 

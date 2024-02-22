@@ -20,17 +20,15 @@
   <div class="modal fade" id="addProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن پروژه جدید</h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
-            aria-label="Close"></button>
+        <div class="modal-header border-0">
+          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">ایجاد پروژه</h1>
         </div>
-        <div class="modal-body">
+        <div class="modal-body border-0 ">
           <p class="mb-0 fs-14 font-bold">کاربر گرامی لطفا اطلاعات درخواستی پروژه را با دقت وارد کنید.</p>
           <div class="row g-3 mx-0 mt-0">
             <div class="col-sm-6">
               <div class="form-floating">
-                <select class="form-select border-main border-main" id="floatingSelect"
+                <select class="form-select border-main" id="floatingSelect"
                   aria-label="Floating label select example">
                   <option selected>شرکت هیتا</option>
                   <option value="1">شرکت آرا</option>
@@ -91,24 +89,22 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
-          <button type="button" class="btn btn-success">ثبت</button>
+          <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">انصراف</button>
+          <button type="button" class="btn btn-sm btn-success">ایجاد پروژه</button>
         </div>
       </form>
     </div>
   </div>
 
    <!-- teamListProject Modal -->
-   <div class="modal fade" id="teamListProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade shadow-lg " id="teamListProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header border-0">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
-            aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body border-0">
           <p class="mb-0 fs-12 font-bold">برای اضافه و حذف کردن نفر به تیم پروژه بر روی دکمه زیر کلیک کنید</p>
           <div data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success btn-sm mx-auto d-table my-3">اضافه و حذف کردن نفرات تیم پروژه</div>
           <div class="bg-danger text-white fw-bold p-2 fs-14 text-center">هنوز تیم پروژه انتخاب نشده است</div>
@@ -118,17 +114,17 @@
               <table class="w-100 text-center border-main">
                 <thead class="bg-orange text-white fs-14">
                   <tr>
-                    <th class="py-2">نام شرکت مجری پروژه</th>
-                    <th class="py-2">سهم شرکت از پروژه(درصد)</th>
+                    <th class="py-1">نام شرکت مجری پروژه</th>
+                    <th class="py-1">سهم شرکت از پروژه(درصد)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="border-main py-2 fw-bold">ماهور</td>
-                    <td class="fs-12 font-bold border-main py-2">
-                      <div class="d-flex align-items-center justify-content-around gap-2">
-                        <p class="mb-0">0%</p>
-                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                    <td class="border-main py-2 fw-bold fs-12">ماهور</td>
+                    <td class="fs-12 font-bold border-main p-1">
+                      <div class="d-flex align-items-center justify-content-center gap-2">
+                        <input min="0" max="100" type="number" class="text-dark outline-none w-25 border rounded-8 text-center p-1" placeholder="درصد">
+                        <p class="mb-0 fw-bold ">%</p>
                       </div>
                     </td>
                   </tr>
@@ -140,69 +136,69 @@
               <table class="w-100 text-center border-main">
                 <thead class="bg-orange text-white fs-14">
                   <tr>
-                    <th class="py-2">ردیف</th>
-                    <th class="py-2">نام و نام خانوادگی</th>
-                    <th class="py-2">سهم از پروژه(درصد)</th>
+                    <th class="py-1">ردیف</th>
+                    <th class="py-1">نام و نام خانوادگی</th>
+                    <th class="py-1">سهم از پروژه(درصد)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="border-main py-2 fw-bold">1</td>
-                    <td class="border-main py-2 fw-bold">
+                    <td class="border-main fw-bold p-1">1</td>
+                    <td class="border-main fw-bold p-1">
                       <div class="d-flex align-items-center justify-content-center gap-2 ">
                         <img alt="img" src="assets/img/avatar.png" class="d-block rounded-circle w-35 h-35">
-                        <p class="mb-0 fw-bold fs-14">علیرضا بطحائی</p>
+                        <p class="mb-0 fw-bold fs-12">علیرضا بطحائی</p>
                       </div>
                     </td>
-                    <td class="fs-12 font-bold border-main py-2">
-                      <div class="d-flex align-items-center justify-content-around gap-2">
-                        <p class="mb-0">0%</p>
-                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                    <td class="fs-12 font-bold border-main p-1">
+                      <div class="d-flex align-items-center justify-content-center gap-2">
+                        <input min="0" max="100" type="number" class="text-dark outline-none w-25 border rounded-8 text-center p-1" placeholder="درصد">
+                        <p class="mb-0 fw-bold ">%</p>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="border-main py-2 fw-bold">1</td>
-                    <td class="border-main py-2 fw-bold">
+                    <td class="border-main fw-bold p-1">1</td>
+                    <td class="border-main fw-bold p-1">
                       <div class="d-flex align-items-center justify-content-center gap-2 ">
                         <img alt="img" src="assets/img/avatar.png" class="d-block rounded-circle w-35 h-35">
-                        <p class="mb-0 fw-bold fs-14">علیرضا بطحائی</p>
+                        <p class="mb-0 fw-bold fs-12">علیرضا بطحائی</p>
                       </div>
                     </td>
-                    <td class="fs-12 font-bold border-main py-2">
-                      <div class="d-flex align-items-center justify-content-around gap-2">
-                        <p class="mb-0">0%</p>
-                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                    <td class="fs-12 font-bold border-main p-1">
+                      <div class="d-flex align-items-center justify-content-center gap-2">
+                        <input min="0" max="100" type="number" class="text-dark outline-none w-25 border rounded-8 text-center p-1" placeholder="درصد">
+                        <p class="mb-0 fw-bold ">%</p>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="border-main py-2 fw-bold">1</td>
-                    <td class="border-main py-2 fw-bold">
+                    <td class="border-main fw-bold p-1">1</td>
+                    <td class="border-main fw-bold p-1">
                       <div class="d-flex align-items-center justify-content-center gap-2 ">
                         <img alt="img" src="assets/img/avatar.png" class="d-block rounded-circle w-35 h-35">
-                        <p class="mb-0 fw-bold fs-14">علیرضا بطحائی</p>
+                        <p class="mb-0 fw-bold fs-12">علیرضا بطحائی</p>
                       </div>
                     </td>
-                    <td class="fs-12 font-bold border-main py-2">
-                      <div class="d-flex align-items-center justify-content-around gap-2">
-                        <p class="mb-0">0%</p>
-                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                    <td class="fs-12 font-bold border-main p-1">
+                      <div class="d-flex align-items-center justify-content-center gap-2">
+                        <input min="0" max="100" type="number" class="text-dark outline-none w-25 border rounded-8 text-center p-1" placeholder="درصد">
+                        <p class="mb-0 fw-bold ">%</p>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="border-main py-2 fw-bold">1</td>
-                    <td class="border-main py-2 fw-bold">
+                    <td class="border-main fw-bold p-1">1</td>
+                    <td class="border-main fw-bold p-1">
                       <div class="d-flex align-items-center justify-content-center gap-2 ">
                         <img alt="img" src="assets/img/avatar.png" class="d-block rounded-circle w-35 h-35">
-                        <p class="mb-0 fw-bold fs-14">علیرضا بطحائی</p>
+                        <p class="mb-0 fw-bold fs-12">علیرضا بطحائی</p>
                       </div>
                     </td>
-                    <td class="fs-12 font-bold border-main py-2">
-                      <div class="d-flex align-items-center justify-content-around gap-2">
-                        <p class="mb-0">0%</p>
-                        <a class="btn btn-sm btn-primary">ویرایش</a>
+                    <td class="fs-12 font-bold border-main p-1">
+                      <div class="d-flex align-items-center justify-content-center gap-2">
+                        <input min="0" max="100" type="number" class="text-dark outline-none w-25 border rounded-8 text-center p-1" placeholder="درصد">
+                        <p class="mb-0 fw-bold ">%</p>
                       </div>
                     </td>
                   </tr>
@@ -212,7 +208,7 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">برگشت</button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">برگشت</button>
         </div>
       </form>
     </div>
@@ -225,14 +221,12 @@
         <div class="modal-header">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
-            aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <p class="mb-0 fs-12 font-bold">در لیست زیر با تیک زدن و برداشتن تیک می توانید به تیم پروژه اضافه و کم کنید،
             بعد از ویرایش تیم مورد نظر دکمه بستن لیست را اعمال نمایید.</p>
           <a data-bs-dismiss="modal" aria-label="Close" class="btn btn-success btn-sm mx-auto d-table my-3">بستن لیست</a>
-          <div class="row gy-3 p-2 mx-0 mt-0 border-main">
+          <div class="row gy-3 p-2 mx-0 mt-0">
             <div class="col-sm-4 col-6">
               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
                 <input type="checkbox" class="form-check-input cursor-pointer">
@@ -296,7 +290,7 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">برگشت</button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">برگشت</button>
         </div>
       </form>
     </div>
@@ -306,13 +300,11 @@
   <div class="modal fade" id="faseProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header border-0">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">فازهای پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
-            aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body border-0">
           <p class="mb-0 fs-12 font-bold">برای اضافه کردن فاز به پروژه عنوان فاز را وارد کرده و دکمه ی افزودن را اعمال
             نمایید</p>
           <div class="d-flex flex-column flex-sm-row align-items-start justify-content-center w-100 gap-2 my-3">
@@ -338,23 +330,23 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="border-main py-2">۱</td>
-                  <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
-                  <td class="border-main py-2">
+                  <td class="border-main py-1">۱</td>
+                  <td class="fs-12 font-bold border-main py-1">طراحی لوگو و ملزومات</td>
+                  <td class="border-main py-1">
                     <a title="افزودن فعالیت"
                      class="btn btn-success btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                       </svg>
                     </a>
                     <a title="ویرایش" class="btn btn-warning btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                       </svg>
                     </a>
                     <a title="حذف" class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                         class="bi bi-trash" viewBox="0 0 16 16">
                         <path
                           d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
@@ -365,23 +357,23 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="border-main py-2">۱</td>
-                  <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
-                  <td class="border-main py-2">
+                  <td class="border-main py-1">۱</td>
+                  <td class="fs-12 font-bold border-main py-1">طراحی لوگو و ملزومات</td>
+                  <td class="border-main py-1">
                     <a title="افزودن فعالیت"
                      class="btn btn-success btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                       </svg>
                     </a>
                     <a title="ویرایش" class="btn btn-warning btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                       </svg>
                     </a>
                     <a title="حذف" class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                         class="bi bi-trash" viewBox="0 0 16 16">
                         <path
                           d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
@@ -392,23 +384,23 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="border-main py-2">۱</td>
-                  <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
-                  <td class="border-main py-2">
+                  <td class="border-main py-1">۱</td>
+                  <td class="fs-12 font-bold border-main py-1">طراحی لوگو و ملزومات</td>
+                  <td class="border-main py-1">
                     <a title="افزودن فعالیت"
                      class="btn btn-success btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                       </svg>
                     </a>
                     <a title="ویرایش" class="btn btn-warning btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                       </svg>
                     </a>
                     <a title="حذف" class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                         class="bi bi-trash" viewBox="0 0 16 16">
                         <path
                           d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
@@ -419,23 +411,23 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="border-main py-2">۱</td>
-                  <td class="fs-12 font-bold border-main py-2">طراحی لوگو و ملزومات</td>
-                  <td class="border-main py-2">
+                  <td class="border-main py-1">۱</td>
+                  <td class="fs-12 font-bold border-main py-1">طراحی لوگو و ملزومات</td>
+                  <td class="border-main py-1">
                     <a title="افزودن فعالیت"
                      class="btn btn-success btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                       </svg>
                     </a>
                     <a title="ویرایش" class="btn btn-warning btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                       </svg>
                     </a>
                     <a title="حذف" class="btn btn-danger btn-sm">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                         class="bi bi-trash" viewBox="0 0 16 16">
                         <path
                           d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
@@ -450,7 +442,7 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">برگشت</button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">برگشت</button>
         </div>
       </form>
     </div>
@@ -460,25 +452,22 @@
    <div class="modal fade" id="payProject2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header border-0">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
-            aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body border-0">
           <a data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-success d-table mx-auto fw-bold fs-14">افزودن صورت وضعیت جدید</a>
           <div class="mt-3 fs-12">
             <div class="d-flex align-items-center justify-content-between mb-2">
               <p class="mb-0 fw-bold text-primary">شرکت ماهور</p>
-              <p data-bs-dismiss="modal" class="mb-0 btn btn-sm btn-warning">بستن</p>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
                <p class="mb-0 fw-bold text-orange">شماره فاکتور:</p>
                <p class="mb-0 fw-bold">654893</p>
               </div>
-              <div class="rounded-circle w-35 h-35 bg-purple text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
+              <div class="rounded-circle w-35 h-35 bg-info text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-2">
               <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
@@ -500,7 +489,7 @@
               <div class="fw-bold">1402/12/01</div>
             </div>
             <div class="rounded-4 p-3 border-main">
-              <div class="d-flex align-items-start justify-content-between gap-2 mb-3 flex-wrap">
+              <div class="d-flex align-items-start justify-content-between gap-2 mb-3 flex-wrap flex-sm-nowrap">
                 <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
                   <p class="mb-0 fw-bold flex-shrink-0">تاریخ پرداخت:</p>
                   <input type="date" class="w-100 p-2">
@@ -510,7 +499,7 @@
                   <p class="mb-0 fw-bold flex-shrink-0">فیش واریزی:</p>
                   <input type="file" class="w-100 p-2">
                  </div>
-                 <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
+                 <small class="d-block fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
               </div>
               </div>
               <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success w-100">
@@ -518,7 +507,7 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">انصراف</button>
         </div>
       </form>
     </div>
@@ -528,15 +517,41 @@
   <div class="modal fade" id="payProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header border-0">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
-          <button type="button" class="btn-close me-auto ms-0 btn-sm" data-bs-dismiss="modal"
-            aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <input type="submit" value="افزودن" class="btn btn-success mx-auto d-block">
+        <div class="modal-body border-0">
           <div class="row g-3 mx-0 mt-0">
+            <div class="col-12">
+              <div class="row gy-3 mx-0">
+                <p class="mb-0 fs-14 font-bold">فازهای پروژه مربوط به این صورت وضعیت را انتخاب کنید</p>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">طراحی لوگو و ملزومات</p>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">توسعه سامانه</p>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">طراحی مدل مفهومی</p>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                    <input type="checkbox" class="form-check-input cursor-pointer">
+                    <p class="mb-0">تکمیل بارگذاری مدل</p>
+                  </label>
+                </div>
+              </div>
+            </div>
             <div class="col-sm-6">
               <div class="form-floating">
                 <input type="text" class="form-control border-main" id="floatingInputValue"
@@ -548,35 +563,6 @@
               <div class="form-floating">
                 <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره فاکتور">
                 <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره فاکتور</label>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="row gy-3 mx-0">
-                <p class="mb-0 fs-14 font-bold">فازهای پروژه مربوط به این صورت وضعیت را انتخاب کنید</p>
-                <div class="col-6">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">طراحی لوگو و ملزومات</p>
-                  </label>
-                </div>
-                <div class="col-6">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">توسعه سامانه</p>
-                  </label>
-                </div>
-                <div class="col-6">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">طراحی مدل مفهومی</p>
-                  </label>
-                </div>
-                <div class="col-6">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">تکمیل بارگذاری مدل</p>
-                  </label>
-                </div>
               </div>
             </div>
             <div class="col-sm-6">
@@ -611,7 +597,8 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">انصراف</button>
+          <input type="submit" value="افزودن" class="btn btn-success btn-sm d-block">
         </div>
       </form>
     </div>
@@ -622,14 +609,14 @@
   <!-- <img src="assets/img/111.png"> -->
   <main>
     <div class="d-flex">
-      <aside class="w-246 p-2 border-start bg-white h-100vh overflow-auto hidden-scroll">
-        <div>
-          <img alt="avatar" src="assets/img/97388270917039638331689339881536.jpg"
+      <aside class="w-246 border-start bg-white h-100vh overflow-auto hidden-scroll">
+        <div class="p-3">
+          <img alt="avatar" src="assets/img/avatar.png"
             class="rounded-circle border-main-2 h-101 w-101 mx-auto d-block img-fluid">
           <p class="mb-1 mt-2 text-orange text-center font-bold">یعقوب خدری</p>
           <p class="mb-0 text-center font-bold fs-14">برنامه نویس فرانت اند</p>
         </div>
-        <div class="d-flex align-items-center justify-content-between mt-4 gap-2">
+        <div class="d-flex align-items-center justify-content-between mt-4 gap-2 px-3">
           <div
             class="rounded-4 border border-2 d-flex align-items-center gap-2  px-2 h-30 flex-grow-1 shadow-sm cursor-pointer">
             <p class="mb-0 fw-bold fs-12">کار جدید</p>
@@ -643,8 +630,8 @@
             </svg>
           </div>
         </div>
-        <ul class="mt-4 fw-bold list-unstyled pe-0">
-          <li class="d-block mb-3 ">
+        <ul class="mt-4 fw-bold list-unstyled px-0">
+          <li class="d-block mb-3 px-3 py-1">
             <a class="d-flex align-items-center gap-2 text-dark">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-speedometer text-orange" viewBox="0 0 16 16">
@@ -656,7 +643,7 @@
               <p class="mb-0">تالار عمومی</p>
             </a>
           </li>
-          <li class="d-block mb-3 ">
+          <li class="d-block mb-3 px-3 py-1">
             <a class="d-flex align-items-center gap-2 text-dark">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-slack text-orange" viewBox="0 0 16 16">
@@ -666,7 +653,7 @@
               <p class="mb-0">کارهای من</p>
             </a>
           </li>
-          <li class="d-block mb-3 ">
+          <li class="d-block mb-3 px-3 py-1">
             <a class="d-flex align-items-center gap-2 text-dark">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -679,7 +666,7 @@
               <p class="mb-0">عقربه</p>
             </a>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-cash-coin text-orange" viewBox="0 0 16 16">
@@ -724,7 +711,7 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.22222" height="6.22222" rx="0.6" fill="#E65100" />
@@ -752,7 +739,7 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-graph-up-arrow text-orange" viewBox="0 0 16 16">
@@ -779,7 +766,7 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-megaphone-fill text-orange" viewBox="0 0 16 16">
@@ -806,7 +793,7 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-building text-orange" viewBox="0 0 16 16">
@@ -835,7 +822,7 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-building text-orange" viewBox="0 0 16 16">
@@ -864,7 +851,7 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-building text-orange" viewBox="0 0 16 16">
@@ -893,55 +880,6 @@
               </div>
             </div>
           </li>
-          <li class="d-block mb-3">
-            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
-              <p class="mb-0">گروه های من</p>
-              <svg class="mt-1" width="12" height="12" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
-                  fill="#90959D" />
-              </svg>
-            </div>
-            <div class="dropdownContent">
-              <div class="py-2">
-                <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="14" height="14" rx="2" fill="#E65100" />
-                  </svg>
-                  <p class="mb-0">شتابدهنده ماهور</p>
-                  <svg class="mt-1" width="12" height="12" viewBox="0 0 8 6" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
-                      fill="#90959D" />
-                  </svg>
-                </div>
-                <div class="dropdownContent">
-                  <div class="py-2">
-                    <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="11" height="11" rx="2" fill="#E65100" />
-                        <path
-                          d="M2 4C2 2.89543 2.89543 2 4 2H7C8.10457 2 9 2.89543 9 4V7C9 8.10457 8.10457 9 7 9H4C2.89543 9 2 8.10457 2 7V4Z"
-                          fill="white" />
-                        <rect x="4" y="4" width="3" height="3" rx="1" fill="#6B6F76" />
-                        <rect x="3" y="3" width="11" height="11" rx="2" fill="#E65100" />
-                        <rect x="5" y="5" width="7" height="7" rx="2" fill="white" />
-                        <rect x="7" y="7" width="3" height="3" rx="1" fill="#E65100" />
-                      </svg>
-                      <p class="mb-0">چالش ها</p>
-                    </div>
-                    <div class="dropdownContent">
-                      <div class="py-2 border-end border-2 me-1 pe-3">
-                        <a class="text-dark d-block">فعال</a>
-                        <a class="text-dark d-block">لیست انتظار</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
         </ul>
       </aside>
       <div class="flex-grow-1 position-relative h-100vh h-lg-auto overflow-auto hidden-scroll">
@@ -967,8 +905,6 @@
           </div>
         </div>
         <div class="py-4 px-3">
-          <a data-bs-toggle="modal" data-bs-target="#addProjectModal"
-            class="btn-success rounded-4 py-2 px-4 text-white font-bold fs-14 d-table mx-auto">افزودن پروژه جدید</a>
           <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-3 mt-4">
             <form class="d-flex align-items-center px-2 gap-1 border-main h-35 rounded-8">
               <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 16 16" fill="none"
@@ -978,14 +914,18 @@
               </svg>
               <input placeholder="جستجو..." class="bg-transparent w-100 border-0 outline-none">
             </form>
-            <div class="d-flex align-items-center gap-2">
-              <p class="mb-0 font-bold">تعداد نمایش:</p>
-              <select class="bg-transparent border-main rounded-4 px-4">
-                <option>5</option>
-                <option>10</option>
-                <option>15</option>
-                <option>20</option>
-              </select>
+            <div class="d-flex align-items-center flex-wrap gap-2">
+              <a data-bs-toggle="modal" data-bs-target="#addProjectModal"
+              class="btn-success btn-sm rounded-4 py-2 px-4 text-white font-bold fs-12 d-table">افزودن پروژه جدید</a>
+              <div class="d-flex align-items-center gap-2">
+                <p class="mb-0 font-bold">تعداد نمایش:</p>
+                <select class="bg-transparent border-main rounded-4 px-4">
+                  <option>5</option>
+                  <option>10</option>
+                  <option>15</option>
+                  <option>20</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="table-responsive">
@@ -1019,15 +959,15 @@
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
-                      class="btn btn-warning text-white py-2 rounded-4 fs-12 font-bold mb-0">نامشخص</p>
+                      class="btn btn-danger btn-sm text-white py-2 rounded-4 fs-10 font-bold mb-0">نامشخص</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">ندارد</p>
+                      class="btn btn-sm btn-primary text-white py-2 rounded-4 fs-10 font-bold mb-0">ندارد</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                      class="btn btn-sm btn-primary text-white py-2 rounded-4 fs-10 font-bold mb-0">افزودن</p>
                   </td>
                   <td>0</td>
                   <td>50,000,000</td>
@@ -1046,15 +986,15 @@
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
-                      class="btn btn-warning text-white py-2 rounded-4 fs-12 font-bold mb-0">کامل نشده</p>
+                      class="btn btn-sm btn-warning text-white py-2 rounded-4 fs-10 font-bold mb-0">کامل نشده</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">4 فاز</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                      class="btn btn-sm btn-primary text-white py-2 rounded-4 fs-10 font-bold mb-0">افزودن</p>
                   </td>
                   <td>0</td>
                   <td>50,000,000</td>
@@ -1073,15 +1013,15 @@
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">ثبت شده</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">4 فاز</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                      class="btn btn-sm btn-primary text-white py-2 rounded-4 fs-10 font-bold mb-0">افزودن</p>
                   </td>
                   <td>0</td>
                   <td>50,000,000</td>
@@ -1100,19 +1040,19 @@
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">ثبت شده</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">4 فاز</p>
                   </td>
                   <td>
                     <p
-                      class="btn bg-purple text-white py-2 rounded-4 fs-12 font-bold mb-0">450,000</p>
+                      class="btn bg-purple text-white py-2 rounded-4 fs-10 font-bold mb-0">450,000</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#payProject2Modal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">450,000</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">450,000</p>
                   </td>
                   <td>0</td>
                 </tr>
@@ -1130,15 +1070,15 @@
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">ثبت شده</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">4 فاز</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                      class="btn btn-sm btn-primary text-white py-2 rounded-4 fs-10 font-bold mb-0">افزودن</p>
                   </td>
                   <td>0</td>
                   <td>50,000,000</td>
@@ -1157,15 +1097,15 @@
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#teamListProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">ثبت شده</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">ثبت شده</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#faseProjectModal"
-                      class="btn btn-success text-white py-2 rounded-4 fs-12 font-bold mb-0">4 فاز</p>
+                      class="btn btn-sm btn-success text-white py-2 rounded-4 fs-10 font-bold mb-0">4 فاز</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#payProjectModal"
-                      class="btn btn-primary text-white py-2 rounded-4 fs-12 font-bold mb-0">افزودن</p>
+                      class="btn btn-sm btn-primary text-white py-2 rounded-4 fs-10 font-bold mb-0">افزودن</p>
                   </td>
                   <td>0</td>
                   <td>50,000,000</td>
@@ -1173,13 +1113,13 @@
               </tbody>
             </table>
           </div>
-          <ul class="mt-3 pagination pe-0 list-unstyled d-flex align-items-center justify-content-center gap-4">
-            <li><a class="w-100 h-100 pt-1 text-center text-dark active">1</a></li>
-            <li><a class="w-100 h-100 pt-1 text-center text-dark">2</a></li>
-            <li class="d-none d-sm-flex"><a class="w-100 h-100 pt-1 text-center text-dark">3</a></li>
-            <li class="d-none d-sm-flex"><a class="w-100 h-100 pt-1 text-center text-dark">4</a></li>
-            <li><a class="w-100 h-100 pt-1 text-center text-dark">...</a></li>
-            <li><a class="w-100 h-100 pt-1 text-center text-dark">6</a></li>
+          <ul class="mt-3 pagination pe-0 list-unstyled d-flex align-items-center justify-content-center gap-2">
+            <li><a class="w-100 h-100 d-block pt-1 text-center text-dark active">1</a></li>
+            <li><a class="w-100 h-100 d-block pt-1 text-center text-dark">2</a></li>
+            <li class="d-none d-sm-flex"><a class="w-100 h-100 d-block pt-1 text-center text-dark">3</a></li>
+            <li class="d-none d-sm-flex"><a class="w-100 h-100 d-block pt-1 text-center text-dark">4</a></li>
+            <li><a class="w-100 h-100 d-block pt-1 text-center text-dark">...</a></li>
+            <li><a class="w-100 h-100 d-block pt-1 text-center text-dark">6</a></li>
           </ul>
         </div>
       </div>
