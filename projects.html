@@ -11,6 +11,7 @@
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel="stylesheet" href="assets/css/jalalidatepicker.min.css">
   <title>پروژه ها</title>
 </head>
 
@@ -488,11 +489,15 @@
               </div>
               <div class="fw-bold">1402/12/01</div>
             </div>
-            <div class="rounded-4 p-3 border-main">
+            <div class="showFish btn btn-success btn-sm mx-auto border-0 d-table mb-3">
+              <span>فیش واریزی</span>
+              <span class="d-none">بستن</span>
+            </div>
+            <div class="rounded-4 p-3 border-main fishContent">
               <div class="d-flex align-items-start justify-content-between gap-2 mb-3 flex-wrap flex-sm-nowrap">
                 <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
                   <p class="mb-0 fw-bold flex-shrink-0">تاریخ پرداخت:</p>
-                  <input type="date" class="w-100 p-2">
+                  <input data-jdp type="text" class="w-100 p-2 border-0 outline-none">
                </div>
               <div class="flex-grow-1 w-100">
                 <div class="d-flex align-items-center gap-2">
@@ -523,6 +528,32 @@
         </div>
         <div class="modal-body border-0">
           <div class="row g-3 mx-0 mt-0">
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue"
+                  placeholder="عنوان صورت وضعیت">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان صورت وضعیت</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره فاکتور">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره فاکتور</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="مبلغ (تومان)">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ (تومان)</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue"
+                  placeholder="درصد از کل پروژه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">درصد از کل پروژه</label>
+              </div>
+            </div>
             <div class="col-12">
               <div class="row gy-3 mx-0">
                 <p class="mb-0 fs-14 font-bold">فازهای پروژه مربوط به این صورت وضعیت را انتخاب کنید</p>
@@ -554,42 +585,14 @@
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue"
-                  placeholder="عنوان صورت وضعیت">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان صورت وضعیت</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره فاکتور">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره فاکتور</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="مبلغ (تومان)">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">مبلغ (تومان)</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue"
-                  placeholder="درصد از کل پروژه">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">درصد از کل پروژه</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="date" class="form-control border-main" id="floatingInputValue"
-                  value="تاریخ درج صورت وضعیت">
+                <input type="text" data-jdp class="form-control border-main" id="floatingInputValue">
                 <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ درج صورت
                   وضعیت</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="date" class="form-control border-main" id="floatingInputValue"
-                  value="تاریخ پیش بینی پرداخت">
+                <input type="text" data-jdp class="form-control border-main" id="floatingInputValue">
                 <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ پیش بینی
                   پرداخت</label>
               </div>
@@ -1127,6 +1130,7 @@
   </main>
 
 
+  <script src="assets/js/jalalidatepicker.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/dashboard.js"></script>
 

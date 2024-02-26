@@ -15,6 +15,7 @@ hamIcon.addEventListener('click',function () {
 
 let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
 let dropdownContent=Array.from(document.getElementsByClassName('dropdownContent'));
+let showFish=Array.from(document.getElementsByClassName('showFish'));
 let tabs=Array.from(document.getElementsByClassName('tab'));
 let tab2=Array.from(document.getElementsByClassName('tab2'));
 let tab3=Array.from(document.getElementsByClassName('tab3'));
@@ -28,6 +29,13 @@ let tabContent5=Array.from(document.getElementsByClassName('tab-content5'));
 let tabContent6=Array.from(document.getElementsByClassName('tab-content6'));
 let openDropdown=Array.from(document.getElementsByClassName('openDropdown'));
 let dropdown=Array.from(document.getElementsByClassName('dropdown'));
+
+showFish.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.nextElementSibling.classList.toggle('active');
+    item.classList.toggle('active');
+  })
+})
 
 dropdownBtn.forEach((item)=>{
   item.addEventListener('click',function () {
@@ -153,3 +161,7 @@ tab6.forEach((tab) => {
       })
   })
 })
+
+// datapicker
+
+jalaliDatepicker.startWatch();
