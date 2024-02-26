@@ -34,6 +34,7 @@ let dropdown=Array.from(document.getElementsByClassName('dropdown'));
 addTask.forEach((item)=>{
   item.addEventListener('click',function () {
     item.classList.toggle('active');
+    item.parentElement.parentElement.nextElementSibling.classList.toggle('active');
   })
 })
 
