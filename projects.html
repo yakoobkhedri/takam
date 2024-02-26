@@ -12,6 +12,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
   <link rel="stylesheet" href="assets/css/jalalidatepicker.min.css">
+  <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
   <title>پروژه ها</title>
 </head>
 
@@ -51,11 +52,8 @@
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>نماد (حروف بزرگ)</option>
-                  <option value="1">نماد (حروف کوچک)</option>
-                </select>
-                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نماد (انگلیسی)</label>
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="نماد کوچک یا بزرگ...">
+                <label class="fs-14 font-bold text-orange" for="floatingSelect">نماد (انگلیسی)</label>
               </div>
             </div>
             <div class="col-sm-6">
@@ -66,8 +64,8 @@
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="date" class="form-control border-main" id="floatingInputValue" value="عنوان پروژه">
-                <label class="-right-35 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ انعقاد
+                <input data-jdp type="text" class="form-control border-main" id="floatingInputValue" placeholder="تاریخ انعقاد قرارداد">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ انعقاد
                   قرارداد</label>
               </div>
             </div>
@@ -79,9 +77,11 @@
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <input type="file" class="form-control form-control-sm pt-34 border-main" id="floatingInputValue"
-                  placeholder="عنوان پروژه">
-                <label class="-right-93 -right-sm-35 fs-14 font-bold text-orange" for="floatingInputValue">فایل قرارداد
+                <div class="box pt-34">
+                  <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple="">
+                  <label for="file-7"><span class="w-100"></span> <strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>بارگذاری قرارداد</strong></label>
+                </div>
+                <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">فایل قرارداد
                   پروژه</label>
                 <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت قرارداد پروژه حتما باید jpeg,png یا pdf
                   باشد.</small>
@@ -459,7 +459,7 @@
         </div>
         <div class="modal-body border-0">
           <a data-bs-toggle="modal" data-bs-target="#payProjectModal" class="btn btn-success d-table mx-auto fw-bold fs-14">افزودن صورت وضعیت جدید</a>
-          <div class="mt-3 fs-12">
+          <div class="mt-3 fs-12 bg-lightOrange2 p-3 rounded-8 mb-2">
             <div class="d-flex align-items-center justify-content-between mb-2">
               <p class="mb-0 fw-bold text-primary">شرکت ماهور</p>
             </div>
@@ -493,16 +493,73 @@
               <span>فیش واریزی</span>
               <span class="d-none">بستن</span>
             </div>
-            <div class="rounded-4 p-3 border-main fishContent">
-              <div class="d-flex align-items-start justify-content-between gap-2 mb-3 flex-wrap flex-sm-nowrap">
+            <div class="rounded-4 p-3 fishContent bg-white">
+              <div class="d-flex flex-column align-items-start justify-content-between gap-2 mb-3 flex-wrap flex-sm-nowrap">
                 <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
                   <p class="mb-0 fw-bold flex-shrink-0">تاریخ پرداخت:</p>
-                  <input data-jdp type="text" class="w-100 p-2 border-0 outline-none">
+                  <input data-jdp type="text" placeholder="تاریخ را وارد کنید..." class="w-100 p-2 border-0 outline-none">
                </div>
               <div class="flex-grow-1 w-100">
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2">
                   <p class="mb-0 fw-bold flex-shrink-0">فیش واریزی:</p>
-                  <input type="file" class="w-100 p-2">
+                  <div class="box">
+                    <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple />
+                    <label for="file-7"><span></span> <strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg>بارگذاری فیش&hellip;</strong></label>
+                  </div>
+                 </div>
+                 <small class="d-block fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
+              </div>
+              </div>
+              <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success w-100">
+            </div>
+          </div>
+          <div class="mt-3 fs-12 bg-lightOrange2 p-3 rounded-8 mb-2">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <p class="mb-0 fw-bold text-primary">شرکت ماهور</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">شماره فاکتور:</p>
+               <p class="mb-0 fw-bold">654893</p>
+              </div>
+              <div class="rounded-circle w-35 h-35 bg-info text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">تاریخ پیش بینی پرداخت:</p>
+               <p class="mb-0 fw-bold">1403/12/01</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">مبلغ:</p>
+               <p class="mb-0 fw-bold">450,000 تومان</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange">فازهای مربوطه:</p>
+               <p class="mb-0 fw-bold">654893</p>
+              </div>
+              <div class="fw-bold">1402/12/01</div>
+            </div>
+            <div class="showFish btn btn-success btn-sm mx-auto border-0 d-table mb-3">
+              <span>فیش واریزی</span>
+              <span class="d-none">بستن</span>
+            </div>
+            <div class="rounded-4 p-3 fishContent bg-white">
+              <div class="d-flex flex-column align-items-start justify-content-between gap-2 mb-3 flex-wrap flex-sm-nowrap">
+                <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
+                  <p class="mb-0 fw-bold flex-shrink-0">تاریخ پرداخت:</p>
+                  <input data-jdp type="text" placeholder="تاریخ را وارد کنید..." class="w-100 p-2 border-0 outline-none">
+               </div>
+              <div class="flex-grow-1 w-100">
+                <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2">
+                  <p class="mb-0 fw-bold flex-shrink-0">فیش واریزی:</p>
+                  <div class="box">
+                    <input type="file" name="file-6[]" id="file-6" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple />
+                    <label for="file-6"><span></span> <strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg>بارگذاری فیش&hellip;</strong></label>
+                  </div>
                  </div>
                  <small class="d-block fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
               </div>
@@ -1133,6 +1190,7 @@
   <script src="assets/js/jalalidatepicker.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/custom-file-input.js"></script>
 
 </body>
 
