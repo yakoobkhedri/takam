@@ -383,8 +383,8 @@
                 <h6 class="mb-0 font-bold fs-14 text-center flex-grow-1 w-39">عملیات</h6>
               </div>
               <div class="fs-14 fs-sm-11 font-bold">
-                <div>
-                  <div class="d-flex align-items-stretch justify-content-between py-1 text-center border-main">
+                <div class="border-main">
+                  <div class="d-flex align-items-stretch justify-content-between py-1 text-center">
                     <p class="mb-0 flex-grow-1 flex-shrink-0 text-center w-20 p-1 d-flex align-items-center justify-content-center">1</p>
                     <div class="flex-grow-1 fs-11 w-39 p-1 d-flex align-items-center justify-content-center">
                       طراحی لوگو و ملزومات
@@ -414,6 +414,59 @@
                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
                        </svg>
                      </a>
+                    </div>
+                  </div>
+                  <div class="p-2">
+                    <div class="d-flex flex-column flex-sm-row align-items-start justify-content-center w-100 gap-2 my-1 fs-12">
+                      <div class="w-100">
+                        <div class="flex-grow-1 w-100 border-main rounded-4 d-flex align-items-center gap-2 mb-1">
+                          <input placeholder="عنوان فعالیت را وارد کنید" class="bg-transparent w-100 p-2 fs-12 flex-grow-1 outline-none border-0">
+                          <input min="0" max="100" type="number" placeholder="وزن فعالیت" class="fs-12 bg-transparent outline-none border-0 w-90 text-center border-end border-dark">
+                        </div>
+                        <small class="font-bold fs-12 text-orange">این فیلد اجباری است</small>
+                      </div>
+                      <input type="submit" value="افزودن" class="btn btn-success flex-grow-1 w-sm-100 fs-12">
+                    </div>
+                    <div class="table-responsive w-100">
+                      <div>
+                        <div class="d-flex align-items-center justify-content-between bg-orange text-white border-bottom my-1 py-2 text-secondary">
+                          <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-20">ردیف</h6>
+                          <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-39">عنوان فعالیت</h6>
+                          <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-39">عملیات</h6>
+                        </div>
+                        <div class="fs-12 fs-sm-11 font-bold">
+                          <div class="border-main">
+                            <div class="d-flex align-items-stretch justify-content-between py-1 text-center">
+                              <p class="mb-0 flex-grow-1 flex-shrink-0 text-center w-20 p-1 d-flex align-items-center justify-content-center">1</p>
+                              <div class="flex-grow-1 fs-11 w-39 p-1 d-flex align-items-center justify-content-center">
+                                طراحی لوگو و ملزومات
+                              </div>
+                              <div class="mb-0 flex-grow-1 flex-shrink-0 text-center w-39 p-1 d-flex align-items-center justify-content-center gap-1">
+                                <a title="افزودن فعالیت" class="btn btn-success btn-sm border-0 addTask">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                   <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"></path>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="currentColor" class="bi bi-x-lg d-none" viewBox="0 0 16 16">
+                                   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+                                 </svg>
+                               </a>
+                               <a title="ویرایش" class="btn btn-warning btn-sm">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                   <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                                   <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
+                                 </svg>
+                               </a>
+                               <a title="حذف" class="btn btn-danger btn-sm">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+                                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
+                                 </svg>
+                               </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
