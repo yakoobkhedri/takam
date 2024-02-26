@@ -16,6 +16,7 @@ hamIcon.addEventListener('click',function () {
 let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
 let dropdownContent=Array.from(document.getElementsByClassName('dropdownContent'));
 let showFish=Array.from(document.getElementsByClassName('showFish'));
+let addTask=Array.from(document.getElementsByClassName('addTask'));
 let tabs=Array.from(document.getElementsByClassName('tab'));
 let tab2=Array.from(document.getElementsByClassName('tab2'));
 let tab3=Array.from(document.getElementsByClassName('tab3'));
@@ -29,6 +30,12 @@ let tabContent5=Array.from(document.getElementsByClassName('tab-content5'));
 let tabContent6=Array.from(document.getElementsByClassName('tab-content6'));
 let openDropdown=Array.from(document.getElementsByClassName('openDropdown'));
 let dropdown=Array.from(document.getElementsByClassName('dropdown'));
+
+addTask.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.classList.toggle('active');
+  })
+})
 
 showFish.forEach((item)=>{
   item.addEventListener('click',function () {

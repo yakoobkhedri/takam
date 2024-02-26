@@ -83,6 +83,9 @@ a {
 .w-8{
     width: 8px;
 }
+.w-26{
+    width: 26px;
+}
 .w-30{
     width: 30px;
 }
@@ -119,6 +122,9 @@ a {
 }
 .h-24{
     height: 24px;
+}
+.h-26{
+    height: 26px;
 }
 .h-30{
     height: 30px;
@@ -367,14 +373,18 @@ aside li:hover{
 .showFish.active{
     background-color: #ffc107;
 }
-.showFish.active span:first-child{
+.addTask.active{
+    background-color: #dc3545 !important;
+}
+.showFish.active span:first-child,.addTask.active svg:first-child{
     display: none!important;
 }
-.showFish.active span:last-child{
+.showFish.active span:last-child,.addTask.active svg:last-child{
     display: block!important;
 }
 .fishContent{
   padding: 0!important;
+  padding:0 16px!important;
   border: 0!important;;
 }
 .fishContent.active{
@@ -500,7 +510,6 @@ input[type=number] {
 }
 
 .inputfile-6 + label span {
-    width: 107px;
     min-height: 2em;
     display: inline-block;
     text-overflow: ellipsis;
@@ -577,5 +586,7 @@ input[type=number] {
 }
 
 @media only screen and (max-width:400px) {
-  
+    .inputfile-6 + label span {
+       width: 100px;
+    }
 }
