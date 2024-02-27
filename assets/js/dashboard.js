@@ -51,12 +51,12 @@ dropdownBtn.forEach((item)=>{
       item2.querySelectorAll('svg:last-child').forEach((allsvg)=>{
         allsvg.classList.remove('active')
       })
-    })
+    });
     dropdownContent.forEach((items)=>{
       items.classList.remove('active');
-    })
+    });
     item.nextElementSibling.classList.add('active');
-    item.querySelector('svg:last-child').classList.add('active')
+    item.querySelector('svg:last-child').classList.add('active');
   })
 })
 

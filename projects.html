@@ -101,13 +101,20 @@
    <div class="modal fade shadow-lg " id="teamListProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
-        <div class="modal-header border-0">
-          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span
-              class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+        <div class="modal-header border-0 d-flex align-items-center justify-content-between gap-2">
+          <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">
+            تیم و سهمیه بندی پروژه:
+            <span class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span>
+          </h1>
+          <div class="d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">ذخیره</button>
+            <svg data-bs-toggle="modal" data-bs-target="#teamProjectModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square text-orange cursor-pointer flex-shrink-0" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+          </div>
         </div>
         <div class="modal-body border-0">
-          <p class="mb-0 fs-12 font-bold">برای اضافه و حذف کردن نفر به تیم پروژه بر روی دکمه زیر کلیک کنید</p>
-          <div data-bs-toggle="modal" data-bs-target="#teamProjectModal" class="btn btn-success btn-sm mx-auto d-table my-3">اضافه و حذف کردن نفرات تیم پروژه</div>
           <div class="bg-danger text-white fw-bold p-2 fs-14 text-center">هنوز تیم پروژه انتخاب نشده است</div>
           <div class="mt-3">
             <p class="mb-2 fs-12 font-bold">در لیست زیر شرکت مجری پروژه را مشاهده می کنید</p>
@@ -160,6 +167,7 @@
                     </td>
                     <td class="border-main p-1">
                       <select class="border rounded-4 bg-transparent p-1 fs-12 fw-bold">
+                        <option>-- انتخاب کنید --</option>
                         <option>مدیر پروژه</option>
                         <option>مدیر اجرائی</option>
                         <option>کارشناس ارشد a</option>
@@ -186,6 +194,7 @@
                     </td>
                     <td class="border-main p-1">
                       <select class="border rounded-4 bg-transparent p-1 fs-12 fw-bold">
+                        <option>-- انتخاب کنید --</option>
                         <option>مدیر پروژه</option>
                         <option>مدیر اجرائی</option>
                         <option>کارشناس ارشد a</option>
@@ -212,6 +221,7 @@
                     </td>
                     <td class="border-main p-1">
                       <select class="border rounded-4 bg-transparent p-1 fs-12 fw-bold">
+                        <option>-- انتخاب کنید --</option>
                         <option>مدیر پروژه</option>
                         <option>مدیر اجرائی</option>
                         <option>کارشناس ارشد a</option>
@@ -238,6 +248,7 @@
                     </td>
                     <td class="border-main p-1">
                       <select class="border rounded-4 bg-transparent p-1 fs-12 fw-bold">
+                        <option>-- انتخاب کنید --</option>
                         <option>مدیر پروژه</option>
                         <option>مدیر اجرائی</option>
                         <option>کارشناس ارشد a</option>
@@ -271,7 +282,7 @@
         <div class="modal-body">
           <p class="mb-0 fs-12 font-bold">در لیست زیر با تیک زدن و برداشتن تیک می توانید به تیم پروژه اضافه و کم کنید،
             بعد از ویرایش تیم مورد نظر دکمه بستن لیست را اعمال نمایید.</p>
-          <a data-bs-dismiss="modal" aria-label="Close" class="btn btn-success btn-sm mx-auto d-table my-3">بستن لیست</a>
+          <a data-bs-dismiss="modal" aria-label="Close" class="btn btn-danger btn-sm mx-auto d-table my-3">بستن لیست</a>
           <div class="row gy-3 p-2 mx-0 mt-0">
             <div class="col-sm-4 col-6">
               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
@@ -346,7 +357,7 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">برگشت</button>
+          <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">ذخیره</button>
         </div>
       </form>
     </div>
@@ -416,7 +427,7 @@
                      </a>
                     </div>
                   </div>
-                  <div class="p-2 taskContent">
+                  <div class="p-2 taskContent bg-gray">
                     <div class="d-flex flex-column flex-sm-row align-items-start justify-content-center w-100 gap-2 my-1 fs-12">
                       <div class="w-100">
                         <div class="flex-grow-1 w-100 border-main rounded-4 d-flex align-items-center gap-2 mb-1">
@@ -434,7 +445,7 @@
                           <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-39">عنوان فعالیت</h6>
                           <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-39">عملیات</h6>
                         </div>
-                        <div class="fs-12 fs-sm-11 font-bold">
+                        <div class="fs-12 fs-sm-11 font-bold bg-white ">
                           <div class="border-main">
                             <div class="d-flex align-items-stretch justify-content-between py-1 text-center">
                               <p class="mb-0 flex-grow-1 flex-shrink-0 text-center w-20 p-1 d-flex align-items-center justify-content-center">1</p>
@@ -495,7 +506,7 @@
                      </a>
                     </div>
                   </div>
-                  <div class="p-2 taskContent">
+                  <div class="p-2 taskContent bg-gray">
                     <div class="d-flex flex-column flex-sm-row align-items-start justify-content-center w-100 gap-2 my-1 fs-12">
                       <div class="w-100">
                         <div class="flex-grow-1 w-100 border-main rounded-4 d-flex align-items-center gap-2 mb-1">
@@ -513,7 +524,7 @@
                           <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-39">عنوان فعالیت</h6>
                           <h6 class="mb-0 font-bold fs-12 text-center flex-grow-1 w-39">عملیات</h6>
                         </div>
-                        <div class="fs-12 fs-sm-11 font-bold">
+                        <div class="fs-12 fs-sm-11 font-bold bg-white ">
                           <div class="border-main">
                             <div class="d-flex align-items-stretch justify-content-between py-1 text-center">
                               <p class="mb-0 flex-grow-1 flex-shrink-0 text-center w-20 p-1 d-flex align-items-center justify-content-center">1</p>
@@ -571,10 +582,10 @@
                <p class="mb-0 fw-bold text-orange">شماره فاکتور:</p>
                <p class="mb-0 fw-bold">654893</p>
               </div>
-              <div class="rounded-circle w-35 h-35 bg-info text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
+              <div class="rounded-circle position-absolute start-0 ms-5  w-30 h-30 fs-12 bg-danger text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+              <div class="mb-0 flex-wrap fs-12 fw-bold text-primary d-flex align-items-center gap-1">
                <p class="mb-0 fw-bold text-orange">تاریخ پیش بینی پرداخت:</p>
                <p class="mb-0 fw-bold">1403/12/01</p>
               </div>
@@ -585,15 +596,15 @@
                <p class="mb-0 fw-bold">450,000 تومان</p>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
-               <p class="mb-0 fw-bold text-orange">فازهای مربوطه:</p>
-               <p class="mb-0 fw-bold">654893</p>
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-2">
+              <div class="mb-0 flex-wrap fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange flex-shrink-0">فازهای مربوطه:</p>
+               <p class="mb-0 fw-bold">فاز1-فاز2-فاز3-فاز4-فاز5</p>
               </div>
               <div class="fw-bold">1402/12/01</div>
             </div>
             <div class="showFish btn btn-success btn-sm mx-auto border-0 d-table mb-3">
-              <span>فیش واریزی</span>
+              <span>ثبت فیش واریزی</span>
               <span class="d-none">بستن</span>
             </div>
             <div class="rounded-4 p-3 fishContent bg-white">
@@ -613,7 +624,7 @@
                  <small class="d-block fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
               </div>
               </div>
-              <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success w-100">
+              <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success">
             </div>
           </div>
           <div class="mt-3 fs-12 bg-lightOrange2 p-3 rounded-8 mb-2">
@@ -625,10 +636,10 @@
                <p class="mb-0 fw-bold text-orange">شماره فاکتور:</p>
                <p class="mb-0 fw-bold">654893</p>
               </div>
-              <div class="rounded-circle w-35 h-35 bg-info text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
+              <div class="rounded-circle position-absolute start-0 ms-5  w-30 h-30 fs-12 bg-danger text-white fw-bold d-flex align-items-center justify-content-center">30%</div>
             </div>
             <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+              <div class="mb-0 flex-wrap fs-12 fw-bold text-primary d-flex align-items-center gap-1">
                <p class="mb-0 fw-bold text-orange">تاریخ پیش بینی پرداخت:</p>
                <p class="mb-0 fw-bold">1403/12/01</p>
               </div>
@@ -639,15 +650,15 @@
                <p class="mb-0 fw-bold">450,000 تومان</p>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="mb-0 fs-12 fw-bold text-primary d-flex align-items-center gap-1">
-               <p class="mb-0 fw-bold text-orange">فازهای مربوطه:</p>
-               <p class="mb-0 fw-bold">654893</p>
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-2">
+              <div class="mb-0 flex-wrap fs-12 fw-bold text-primary d-flex align-items-center gap-1">
+               <p class="mb-0 fw-bold text-orange flex-shrink-0">فازهای مربوطه:</p>
+               <p class="mb-0 fw-bold">فاز1-فاز2-فاز3-فاز4-فاز5</p>
               </div>
               <div class="fw-bold">1402/12/01</div>
             </div>
             <div class="showFish btn btn-success btn-sm mx-auto border-0 d-table mb-3">
-              <span>فیش واریزی</span>
+              <span>ثبت فیش واریزی</span>
               <span class="d-none">بستن</span>
             </div>
             <div class="rounded-4 p-3 fishContent bg-white">
@@ -660,14 +671,14 @@
                 <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2">
                   <p class="mb-0 fw-bold flex-shrink-0">فیش واریزی:</p>
                   <div class="box">
-                    <input type="file" name="file-6[]" id="file-6" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple />
-                    <label for="file-6"><span>هنوز فایلی انتخاب نشده است</span> <strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg>بارگزاری فیش&hellip;</strong></label>
+                    <input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple />
+                    <label for="file-5"><span>هنوز فایلی انتخاب نشده است</span><strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg>بارگزاری فیش&hellip;</strong></label>
                   </div>
                  </div>
                  <small class="d-block fs-12 font-bold text-orange">فرمت فیش واریزی حتما باید jpeg,png یا pdf باشد.</small>
               </div>
               </div>
-              <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success w-100">
+              <input type="submit" value="ثبت پرداخت" class="btn btn-sm btn-success">
             </div>
           </div>
         </div>
