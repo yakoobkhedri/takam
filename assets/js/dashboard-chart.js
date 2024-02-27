@@ -12,7 +12,7 @@ Highcharts.chart('gauge', {
     },
 
     title: {
-        text: 'درصد پیشرفت پروژه ها'
+        text: ''
     },
 
     pane: {
@@ -124,7 +124,7 @@ Highcharts.chart('gauge2', {
     },
 
     title: {
-        text: 'درصد تحقق کارها'
+        text: ''
     },
 
     pane: {
@@ -235,7 +235,7 @@ Highcharts.chart('gauge3', {
     },
 
     title: {
-        text: 'میزان رضایت کارفرما'
+        text: ''
     },
 
     pane: {
