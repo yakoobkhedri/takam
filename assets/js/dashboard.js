@@ -54,7 +54,14 @@ showFish.forEach((item) => {
 dropdownBtn.forEach((item) => {
   item.addEventListener("click", function (e) {
     dropdownBtn.forEach((items) => {
-      if (e.target !== items) items.parentElement.classList.remove("active");
+      let itemClicked = false
+      if (e.target === items ||
+        e.target === items.children[0] ||
+        e.target === items.children[1] ||
+        e.target === items.children[2]
+        )
+        itemClicked = true
+      if (!itemClicked) items.parentElement.classList.remove("active");
     });
     item.parentElement.classList.toggle("active");
   });
