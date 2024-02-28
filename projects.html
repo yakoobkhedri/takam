@@ -107,10 +107,8 @@
             <span class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span>
           </h1>
           <div class="d-flex align-items-center gap-2">
-            <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">ذخیره</button>
-            <svg data-bs-toggle="modal" data-bs-target="#teamProjectModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square text-orange cursor-pointer flex-shrink-0" viewBox="0 0 16 16">
-              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
             </svg>
           </div>
         </div>
@@ -264,8 +262,15 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">برگشت</button>
+        <div class="modal-footer justify-content-center gap-2 ">
+          <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="cursor-pointer text-orange bi bi-floppy2-fill" viewBox="0 0 16 16">
+            <path d="M12 2h-2v3h2z"/>
+            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V2.914a1.5 1.5 0 0 0-.44-1.06L14.147.439A1.5 1.5 0 0 0 13.086 0zM4 6a1 1 0 0 1-1-1V1h10v4a1 1 0 0 1-1 1zM3 9h10a1 1 0 0 1 1 1v5H2v-5a1 1 0 0 1 1-1"/>
+          </svg>
+            <svg data-bs-toggle="modal" data-bs-target="#teamProjectModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="cursor-pointer text-success bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
         </div>
       </form>
     </div>
@@ -278,11 +283,15 @@
         <div class="modal-header">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">تیم و سهمیه بندی پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+              <div class="d-flex align-items-center gap-2">
+                <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
         </div>
         <div class="modal-body">
           <p class="mb-0 fs-12 font-bold">در لیست زیر با تیک زدن و برداشتن تیک می توانید به تیم پروژه اضافه و کم کنید،
             بعد از ویرایش تیم مورد نظر دکمه بستن لیست را اعمال نمایید.</p>
-          <a data-bs-dismiss="modal" aria-label="Close" class="btn btn-danger btn-sm mx-auto d-table my-3">بستن لیست</a>
           <div class="row gy-3 p-2 mx-0 mt-0">
             <div class="col-sm-4 col-6">
               <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
@@ -357,7 +366,10 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">ذخیره</button>
+          <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="cursor-pointer text-orange bi bi-floppy2-fill" viewBox="0 0 16 16">
+            <path d="M12 2h-2v3h2z"></path>
+            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V2.914a1.5 1.5 0 0 0-.44-1.06L14.147.439A1.5 1.5 0 0 0 13.086 0zM4 6a1 1 0 0 1-1-1V1h10v4a1 1 0 0 1-1 1zM3 9h10a1 1 0 0 1 1 1v5H2v-5a1 1 0 0 1 1-1"></path>
+          </svg>
         </div>
       </form>
     </div>
@@ -370,6 +382,11 @@
         <div class="modal-header border-0">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">فازهای پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+              <div class="d-flex align-items-center gap-2">
+                <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                </svg>
+              </div>
         </div>
         <div class="modal-body border-0">
           <p class="mb-0 fs-12 font-bold">برای اضافه کردن فاز به پروژه عنوان فاز را وارد کرده و دکمه ی افزودن را اعمال
@@ -556,9 +573,6 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">برگشت</button>
-        </div>
       </form>
     </div>
   </div>
@@ -570,6 +584,11 @@
         <div class="modal-header border-0 d-flex align-items-center gap-2">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">لیست پرداخت های پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+              <div class="d-flex align-items-center gap-2">
+                <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                </svg>
+              </div>
         </div>
         <div class="modal-body border-0">
           <div class="mt-3 fs-12 bg-gray p-3 rounded-8 mb-2">
@@ -619,9 +638,6 @@
             </a>
           </div>
         </div>
-        <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">انصراف</button>
-        </div>
       </form>
     </div>
   </div>
@@ -634,10 +650,8 @@
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
               <div class="d-flex align-items-center gap-2">
-                <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">ذخیره</button>
-                <svg data-bs-toggle="modal" data-bs-target="#payProjectModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square text-orange cursor-pointer flex-shrink-0" viewBox="0 0 16 16">
-                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
                 </svg>
               </div>
         </div>
@@ -751,8 +765,15 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">انصراف</button>
+        <div class="modal-footer justify-content-center gap-2 ">
+          <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="cursor-pointer text-orange bi bi-floppy2-fill" viewBox="0 0 16 16">
+            <path d="M12 2h-2v3h2z"></path>
+            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V2.914a1.5 1.5 0 0 0-.44-1.06L14.147.439A1.5 1.5 0 0 0 13.086 0zM4 6a1 1 0 0 1-1-1V1h10v4a1 1 0 0 1-1 1zM3 9h10a1 1 0 0 1 1 1v5H2v-5a1 1 0 0 1 1-1"></path>
+          </svg>
+            <svg data-bs-toggle="modal" data-bs-target="#payProjectModal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="cursor-pointer text-success bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
         </div>
       </form>
     </div>
@@ -765,6 +786,11 @@
         <div class="modal-header border-0">
           <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">صورت وضعیت های پروژه:<span
               class="fs-12 text-dark me-1">شرکت توسعه و کسب و کار ماهور (MO)/طراحی جایزه BPME</span></h1>
+              <div class="d-flex align-items-center gap-2">
+                <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                </svg>
+              </div>
         </div>
         <div class="modal-body border-0">
           <div class="row g-3 mx-0 mt-0">
@@ -840,7 +866,6 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center ">
-          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">انصراف</button>
           <input type="submit" value="افزودن" class="btn btn-success btn-sm d-block">
         </div>
       </form>
