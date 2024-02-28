@@ -397,7 +397,7 @@
   .addTask.active {
     background-color: #dc3545 !important;
   }
-  .showFish.active span:first-child,
+  .showFish.active span.firstspan,
   .addTask.active svg:first-child {
     display: none !important;
   }

@@ -46,7 +46,7 @@ addTask.forEach((item) => {
 
 showFish.forEach((item) => {
   item.addEventListener("click", function () {
-    item.nextElementSibling.classList.toggle("active");
+    item.parentElement.parentElement.querySelector('.fishContent').classList.toggle("active");
     item.classList.toggle("active");
   });
 });
