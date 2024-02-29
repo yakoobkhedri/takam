@@ -176,6 +176,9 @@
     line-height: 40px;
   }
   /* color */
+  .text-purple{
+    color: #b27eb3;
+  }
   .text-orange {
     color: #e65201;
   }
