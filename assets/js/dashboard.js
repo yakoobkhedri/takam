@@ -14,8 +14,12 @@ hamIcon.addEventListener("click", function () {
 // dropdown menu
 
 const dropdownBtn = Array.from(document.getElementsByClassName("dropdownBtn"));
+const dropdownBtn2 = Array.from(document.getElementsByClassName("dropdownBtn2"));
 const dropdownContent = Array.from(
   document.getElementsByClassName("dropdownContent")
+);
+const dropdownContent2 = Array.from(
+  document.getElementsByClassName("dropdownContent2")
 );
 const showFish = Array.from(document.getElementsByClassName("showFish"));
 const addTask = Array.from(document.getElementsByClassName("addTask"));
@@ -34,6 +38,12 @@ const openDropdown = Array.from(
   document.getElementsByClassName("openDropdown")
 );
 const dropdown = Array.from(document.getElementsByClassName("dropdown"));
+
+dropdownBtn2.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 
 addTask.forEach((item) => {
   item.addEventListener("click", function () {
