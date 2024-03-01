@@ -115,153 +115,459 @@
         <div class="modal-body">
           <p class="mb-0 fs-12 font-bold">در لیست زیر با تیک زدن و برداشتن تیک می توانید سطح دسترسی همکاران را مشخص کنید.</p>
           <div class="row gy-3 p-2 mx-0 mt-0">
-            <div class="col-sm-4 col-6">
-              <div class="dropdownBtn2 d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                <input type="checkbox" class="form-check-input cursor-pointer">
-                <p class="mb-0">امور مالی</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left me-auto" viewBox="0 0 16 16">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 cursor-pointer fs-14 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                  <p class="mb-0">امور مالی</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                 </svg>
+                </div>
               </div>
               <div class="bg-gray dropdownContent2">
-                <div class="p-2">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب کل سیستم</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب من</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">ثبت هزینه شرکتی</p>
-                  </label>
+                <div class="p-1">
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب کل سیستم</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب من</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">ثبت هزینه شرکتی</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 col-6">
-              <div class="dropdownBtn2 d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                <input type="checkbox" class="form-check-input cursor-pointer">
-                <p class="mb-0">امور مالی</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left me-auto" viewBox="0 0 16 16">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 cursor-pointer fs-14 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                  <p class="mb-0">امور مالی</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                 </svg>
+                </div>
               </div>
               <div class="bg-gray dropdownContent2">
-                <div class="p-2">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب کل سیستم</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب من</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">ثبت هزینه شرکتی</p>
-                  </label>
+                <div class="p-1">
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب کل سیستم</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب من</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">ثبت هزینه شرکتی</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 col-6">
-              <div class="dropdownBtn2 d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                <input type="checkbox" class="form-check-input cursor-pointer">
-                <p class="mb-0">امور مالی</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left me-auto" viewBox="0 0 16 16">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 cursor-pointer fs-14 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                  <p class="mb-0">امور مالی</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                 </svg>
+                </div>
               </div>
               <div class="bg-gray dropdownContent2">
-                <div class="p-2">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب کل سیستم</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب من</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">ثبت هزینه شرکتی</p>
-                  </label>
+                <div class="p-1">
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب کل سیستم</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب من</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">ثبت هزینه شرکتی</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 col-6">
-              <div class="dropdownBtn2 d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                <input type="checkbox" class="form-check-input cursor-pointer">
-                <p class="mb-0">امور مالی</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left me-auto" viewBox="0 0 16 16">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 cursor-pointer fs-14 font-bold p-1 bg-lightOrange">
+                <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                  <p class="mb-0">امور مالی</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                 </svg>
-              </div>
-              <div class="bg-gray dropdownContent2">
-                <div class="p-2">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب کل سیستم</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب من</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">ثبت هزینه شرکتی</p>
-                  </label>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-4 col-6">
-              <div class="dropdownBtn2 d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                <input type="checkbox" class="form-check-input cursor-pointer">
-                <p class="mb-0">امور مالی</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left me-auto" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                </svg>
-              </div>
               <div class="bg-gray dropdownContent2">
-                <div class="p-2">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب کل سیستم</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب من</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">ثبت هزینه شرکتی</p>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-6">
-              <div class="dropdownBtn2 d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1 bg-lightOrange">
-                <input type="checkbox" class="form-check-input cursor-pointer">
-                <p class="mb-0">امور مالی</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left me-auto" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                </svg>
-              </div>
-              <div class="bg-gray dropdownContent2">
-                <div class="p-2">
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب کل سیستم</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2 mb-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">صورتحساب من</p>
-                  </label>
-                  <label class="d-flex align-items-center gap-2 cursor-pointer fs-11 font-bold p-2">
-                    <input type="checkbox" class="form-check-input cursor-pointer">
-                    <p class="mb-0">ثبت هزینه شرکتی</p>
-                  </label>
+                <div class="p-1">
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب کل سیستم</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">صورتحساب من</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                      <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-between dropdownBtn2">
+                        <p class="mb-0">ثبت هزینه شرکتی</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                      </div>
+                    </div>
+                    <div class="bg-gray dropdownContent2">
+                      <div class="p-1">
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد اول</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد دوم</p>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="d-flex align-items-center gap-2 cursor-pointer fs-12 font-bold p-1">
+                            <input type="checkbox" class="form-check-input cursor-pointer flex-shrink-0">
+                            <p class="mb-0">مورد سوم</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

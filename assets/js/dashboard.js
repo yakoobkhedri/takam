@@ -41,7 +41,7 @@ const dropdown = Array.from(document.getElementsByClassName("dropdown"));
 
 dropdownBtn2.forEach((item)=>{
   item.addEventListener('click',function () {
-    item.nextElementSibling.classList.toggle('active');
+    item.parentElement.nextElementSibling.classList.toggle('active');
   })
 })
 
