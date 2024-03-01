@@ -13,17 +13,17 @@
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
   <link rel="stylesheet" href="assets/css/jalalidatepicker.min.css">
   <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-  <title>همکاران</title>
+  <title>شرکت های من</title>
 </head>
 
 <body>
 
-  <!-- addpartner Modal -->
+  <!-- add company Modal -->
   <div class="modal fade" id="addPartnerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
         <div class="modal-header border-0">
-          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن همکار</h1>
+          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن شرکت</h1>
           <div class="d-flex align-items-center gap-2">
             <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -99,12 +99,12 @@
     </div>
   </div>
 
-   <!-- addpartner Modal -->
+   <!-- edit company Modal -->
    <div class="modal fade" id="editPartnerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
         <div class="modal-header border-0">
-          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">ویرایش همکار</h1>
+          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">ویرایش شرکت</h1>
           <div class="d-flex align-items-center gap-2">
             <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -1038,7 +1038,7 @@
                   <path fill-rule="evenodd"
                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
                 </svg>
-                <p class="mb-0 text-secondary ">لیست همکاران</p>
+                <p class="mb-0 text-secondary ">لیست شرکت های من</p>
               </div>
             </div>
           </div>
@@ -1055,7 +1055,7 @@
             </form>
             <div class="d-flex align-items-center flex-wrap gap-2">
               <a data-bs-toggle="modal" data-bs-target="#addPartnerModal"
-              class="btn-success btn-sm rounded-4 py-2 px-4 text-white font-bold fs-12 d-table">افزودن همکار جدید</a>
+              class="btn-success btn-sm rounded-4 py-2 px-4 text-white font-bold fs-12 d-table">افزودن شرکت جدید</a>
               <div class="d-flex align-items-center gap-2">
                 <p class="mb-0 font-bold">تعداد نمایش:</p>
                 <select class="bg-transparent border-main rounded-4 px-4">
@@ -1072,12 +1072,9 @@
               <thead class="bg-orange text-white">
                 <tr>
                   <th>ردیف</th>
-                  <th>نام و نام خانوادگی</th>
-                  <th>شرکت</th>
-                  <th>مبلغ (ساعتی)</th>
+                  <th>نام شرکت</th>
+                  <th>مدیرعامل</th>
                   <th>شماره همراه</th>
-                  <th>جزئیات</th>
-                  <th>سطح دسترسی</th>
                   <th>وضعیت</th>
                   <th>عملیات</th>
                 </tr>
@@ -1085,21 +1082,14 @@
               <tbody>
                 <tr>
                   <td>۱</td>
-                  <td>یعقوب خدری</td>
                   <td>
                     <a>
                       شرکت توسعه کسب و کار ماهور (MO)
                     </a>
                   </td>
-                  <td>90,000 تومان</td>
+                  <td>یعقوب خدری</td>
                   <td>
                     09149492490
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#detailsModal" class="btn btn-info btn-sm fs-10 font-bold">جزئیات</p>
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#accessModal" class="btn btn-primary btn-sm fs-10 font-bold">سطح دسترسی</p>
                   </td>
                   <td>
                     <p
@@ -1107,45 +1097,6 @@
                   </td>
                   <td>
                     <div class="d-flex justify-content-center gap-2 ">
-                      <a data-bs-toggle="modal" data-bs-target="#editPartnerModal" title="ویرایش" class="btn btn-warning btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
-                        </svg>
-                      </a>
-                      <a title="حذف" class="btn btn-danger btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
-                          <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
-                        </svg>
-                      </a>
-                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>۱</td>
-                  <td>یعقوب خدری</td>
-                  <td>
-                    <a>
-                      شرکت توسعه کسب و کار ماهور (MO)
-                    </a>
-                  </td>
-                  <td>90,000 تومان</td>
-                  <td>
-                    09149492490
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#detailsModal" class="btn btn-info btn-sm fs-10 font-bold">جزئیات</p>
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#accessModal" class="btn btn-primary btn-sm fs-10 font-bold">سطح دسترسی</p>
-                  </td>
-                  <td>
-                    <p
-                      class="btn btn-success btn-sm text-white py-2 rounded-4 fs-10 font-bold mb-0">فعال</p>
-                  </td>
-                  <td>
-                     <div class="d-flex justify-content-center gap-2 ">
                       <a data-bs-toggle="modal" data-bs-target="#editPartnerModal" title="ویرایش" class="btn btn-warning btn-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                           <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
