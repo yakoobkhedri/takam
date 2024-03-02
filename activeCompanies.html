@@ -13,7 +13,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
   <link rel="stylesheet" href="assets/css/jalalidatepicker.min.css">
   <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-  <title>شرکت های من</title>
+  <title>شرکت های فعال</title>
 </head>
 
 <body>
@@ -35,12 +35,6 @@
           <div class="row g-3 mx-0 mt-0">
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="نام مدیرعامل">
-                <label class="fs-14 font-bold text-orange" for="floatingSelect">نام مدیرعامل</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
                 <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
                   <option selected>شرکت هیتا</option>
                   <option value="1">شرکت آرا</option>
@@ -51,14 +45,24 @@
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره همراه">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره همراه</label>
+                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>یعقوب خدری</option>
+                  <option value="1">رضا توکلی</option>
+                  <option value="2">مبین احمدی</option>
+                </select>
+                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نام مدیرعامل</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره ثابت">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره ثابت</label>
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="کد شرکت">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">کد شرکت</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره تلفن شرکت">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره تلفن شرکت</label>
               </div>
             </div>
             <div class="col-12">
@@ -184,15 +188,6 @@
             <div class="col-12">
               <div class="form-floating">
                 <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>سطح 1</option>
-                  <option value="1">سطح 2</option>
-                </select>
-                <label class="fs-14 font-bold text-orange -right-93" for="floatingSelect">سطح منو</label>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-floating">
-                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
                   <option selected>امور مالی</option>
                   <option value="1">صورتحساب کل سیستم</option>
                 </select>
@@ -210,7 +205,6 @@
                   <tr>
                     <th>ردیف</th>
                     <th>عنوان منو</th>
-                    <th>سطح منو</th>
                     <th>والد منو</th>
                     <th>عملیات</th>
                   </tr>
@@ -221,59 +215,6 @@
                     <td>
                       صورتحساب من
                     </td>
-                    <td>سطح 2</td>
-                    <td>
-                      امور مالی
-                    </td>
-                    <td>
-                      <div class="d-flex justify-content-center gap-2 ">
-                        <a title="ویرایش" class="btn btn-warning btn-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
-                          </svg>
-                        </a>
-                        <a title="حذف" class="btn btn-danger btn-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
-                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
-                          </svg>
-                        </a>
-                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>۱</td>
-                    <td>
-                      صورتحساب من
-                    </td>
-                    <td>سطح 2</td>
-                    <td>
-                      امور مالی
-                    </td>
-                    <td>
-                      <div class="d-flex justify-content-center gap-2 ">
-                        <a title="ویرایش" class="btn btn-warning btn-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
-                          </svg>
-                        </a>
-                        <a title="حذف" class="btn btn-danger btn-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
-                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
-                          </svg>
-                        </a>
-                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>۱</td>
-                    <td>
-                      صورتحساب من
-                    </td>
-                    <td>سطح 2</td>
                     <td>
                       امور مالی
                     </td>
@@ -310,6 +251,45 @@
       </form>
     </div>
   </div>
+
+     <!-- details Modal -->
+     <div class="modal fade" id="detailsModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered max-w-591">
+        <form class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-14 font-bold text-orange" id="exampleModalLabel">شرکت هیتا</h1>
+                <div class="d-flex align-items-center gap-2">
+                  <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </div>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="d-flex align-items-center text-center fs-14 text-white fw-bold border h-40">
+                <div class="bg-orange p-2 w-90 flex-shrink-0">کد شرکت</div>
+                <div class="p-2 flex-grow-1 text-dark">498539</div>
+              </div>
+              <div class="d-flex align-items-center text-center fs-14 text-white fw-bold border h-40">
+                <div class="bg-orange p-2 w-90 flex-shrink-0">شماره ثابت</div>
+                <div class="p-2 flex-grow-1 text-dark">04433687657</div>
+              </div>
+              <div class="d-flex align-items-center text-center fs-14 text-white fw-bold border h-40">
+                <div class="bg-orange p-2 w-90 flex-shrink-0">آدرس</div>
+                <div class="p-2 flex-grow-1 text-dark fs-sm-12">ارومیه،آخر میثم،کوچه 11،بن بست اول،پلاک 3</div>
+              </div>
+              <a class="btn btn-sm btn-success d-inline-flex align-items-center justify-content-center mt-3 gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                  <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+                  <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
+                </svg>
+                <p class="mb-0 fs-14">جواز شرکت</p>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
   <!-- overlay -->
   <div id="overlay" class="position-fixed end-0 start-0 bottom-0 top-0"></div>
@@ -360,12 +340,42 @@
             </a>
           </li>
           <li class="d-block mb-3 px-3 py-1">
-            <a class="d-flex align-items-center gap-2 text-dark">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window text-orange" viewBox="0 0 16 16">
-                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+            <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-cash-coin text-orange" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                <path
+                  d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                <path
+                  d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
               </svg>
-              <p class="mb-0">شرکت های من</p>
-            </a>
+              <p class="mb-0">لیست شرکت ها</p>
+              <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                  fill="#90959D" />
+              </svg>
+            </div>
+            <div class="dropdownContent fs-14">
+              <div class="pt-3">
+                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                  <svg class="rounded-circle flex-shrink-0 " width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0">شرکت های فعال</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                  <svg class="rounded-circle flex-shrink-0 " width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0">شرکت های غیرفعال</p>
+                </a>
+              </div>
+            </div>
           </li>
           <li class="d-block mb-3 px-3 py-1">
             <a class="d-flex align-items-center gap-2 text-dark">
@@ -638,7 +648,7 @@
                   <path fill-rule="evenodd"
                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
                 </svg>
-                <p class="mb-0 text-secondary ">لیست شرکت های من</p>
+                <p class="mb-0 text-secondary ">لیست شرکت های فعال</p>
               </div>
             </div>
           </div>
@@ -673,8 +683,8 @@
                 <tr>
                   <th>ردیف</th>
                   <th>نام شرکت</th>
-                  <th>مدیرعامل</th>
-                  <th>شماره همراه</th>
+                  <th>نام و نام خانوادگی مدیرعامل</th>
+                  <th>جزئیات</th>
                   <th>افزودن زیر منو</th>
                   <th>وضعیت</th>
                   <th>عملیات</th>
@@ -690,112 +700,7 @@
                   </td>
                   <td>یعقوب خدری</td>
                   <td>
-                    09149492490
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#submenuModal" class="btn btn-primary btn-sm fs-10 font-bold">افزودن زیر منو</p>
-                  </td>
-                  <td>
-                    <p
-                      class="btn btn-danger btn-sm text-white py-2 rounded-4 fs-10 font-bold mb-0">پایان همکاری</p>
-                  </td>
-                  <td>
-                    <div class="d-flex justify-content-center gap-2 ">
-                      <a data-bs-toggle="modal" data-bs-target="#editPartnerModal" title="ویرایش" class="btn btn-warning btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
-                        </svg>
-                      </a>
-                      <a title="حذف" class="btn btn-danger btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
-                          <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
-                        </svg>
-                      </a>
-                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>۱</td>
-                  <td>
-                    <a>
-                      شرکت توسعه کسب و کار ماهور (MO)
-                    </a>
-                  </td>
-                  <td>یعقوب خدری</td>
-                  <td>
-                    09149492490
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#submenuModal" class="btn btn-primary btn-sm fs-10 font-bold">افزودن زیر منو</p>
-                  </td>
-                  <td>
-                    <p
-                      class="btn btn-success btn-sm text-white py-2 rounded-4 fs-10 font-bold mb-0">فعال</p>
-                  </td>
-                  <td>
-                    <div class="d-flex justify-content-center gap-2 ">
-                      <a data-bs-toggle="modal" data-bs-target="#editPartnerModal" title="ویرایش" class="btn btn-warning btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
-                        </svg>
-                      </a>
-                      <a title="حذف" class="btn btn-danger btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
-                          <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
-                        </svg>
-                      </a>
-                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>۱</td>
-                  <td>
-                    <a>
-                      شرکت توسعه کسب و کار ماهور (MO)
-                    </a>
-                  </td>
-                  <td>یعقوب خدری</td>
-                  <td>
-                    09149492490
-                  </td>
-                  <td>
-                    <p data-bs-toggle="modal" data-bs-target="#submenuModal" class="btn btn-primary btn-sm fs-10 font-bold">افزودن زیر منو</p>
-                  </td>
-                  <td>
-                    <p
-                      class="btn btn-danger btn-sm text-white py-2 rounded-4 fs-10 font-bold mb-0">پایان همکاری</p>
-                  </td>
-                  <td>
-                    <div class="d-flex justify-content-center gap-2 ">
-                      <a data-bs-toggle="modal" data-bs-target="#editPartnerModal" title="ویرایش" class="btn btn-warning btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"></path>
-                        </svg>
-                      </a>
-                      <a title="حذف" class="btn btn-danger btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
-                          <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
-                        </svg>
-                      </a>
-                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>۱</td>
-                  <td>
-                    <a>
-                      شرکت توسعه کسب و کار ماهور (MO)
-                    </a>
-                  </td>
-                  <td>یعقوب خدری</td>
-                  <td>
-                    09149492490
+                    <p data-bs-toggle="modal" data-bs-target="#detailsModal" class="btn btn-info btn-sm fs-10 font-bold">جزئیات</p>
                   </td>
                   <td>
                     <p data-bs-toggle="modal" data-bs-target="#submenuModal" class="btn btn-primary btn-sm fs-10 font-bold">افزودن زیر منو</p>
