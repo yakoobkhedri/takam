@@ -18,12 +18,12 @@
 
 <body>
 
-  <!-- add company Modal -->
+  <!-- add notification Modal -->
   <div class="modal fade" id="addPartnerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
         <div class="modal-header border-0">
-          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن شرکت</h1>
+          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">افزودن اطلاعیه</h1>
           <div class="d-flex align-items-center gap-2">
             <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -35,40 +35,20 @@
           <div class="row g-3 mx-0 mt-0">
             <div class="col-sm-6">
               <div class="form-floating">
-                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>شرکت هیتا</option>
-                  <option value="1">شرکت آرا</option>
-                  <option value="2">شرکت اهورا</option>
-                </select>
-                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نام شرکت</label>
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان اطلاعیه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان اطلاعیه</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>یعقوب خدری</option>
-                  <option value="1">رضا توکلی</option>
-                  <option value="2">مبین احمدی</option>
-                </select>
-                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نام مدیرعامل</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="کد شرکت">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">کد شرکت</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره تلفن شرکت">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره تلفن شرکت</label>
+                <input data-jdp type="text" class="form-control border-main" id="floatingInputValue" placeholder="تاریخ درج اطلاعیه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ درج اطلاعیه</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="آدرس">
-                <label class="fs-14 font-bold text-orange" for="floatingSelect">آدرس</label>
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="متن اطلاعیه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">متن اطلاعیه</label>
               </div>
             </div>
             <div class="col-12">
@@ -77,8 +57,8 @@
                   <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple="">
                   <label for="file-7"><span class="w-100">هنوز فایلی انتخاب نشده است</span><strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>بارگزاری فرم</strong></label>
                 </div>
-                <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">بارگزاری جواز شرکت</label>
-                <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت جواز شرکت حتما باید jpeg,png یا pdf
+                <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">بارگزاری فایل اطلاعیه</label>
+                <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت فایل اطلاعیه حتما باید jpeg,png یا pdf
                   باشد.</small>
               </div>
             </div>
@@ -91,12 +71,12 @@
     </div>
   </div>
 
-   <!-- edit company Modal -->
+   <!-- edit notification Modal -->
    <div class="modal fade" id="editPartnerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-591">
       <form class="modal-content">
         <div class="modal-header border-0">
-          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">ویرایش شرکت</h1>
+          <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">ویرایش اطلاعیه</h1>
           <div class="d-flex align-items-center gap-2">
             <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -108,36 +88,20 @@
           <div class="row g-3 mx-0 mt-0">
             <div class="col-sm-6">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="نام مدیرعامل">
-                <label class="fs-14 font-bold text-orange" for="floatingSelect">نام مدیرعامل</label>
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان اطلاعیه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">عنوان اطلاعیه</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>شرکت هیتا</option>
-                  <option value="1">شرکت آرا</option>
-                  <option value="2">شرکت اهورا</option>
-                </select>
-                <label class="fs-14 font-bold text-orange -right-35" for="floatingSelect">نام شرکت</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="کد شرکت">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">کد شرکت</label>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="شماره تلفن شرکت">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">شماره تلفن شرکت</label>
+                <input data-jdp type="text" class="form-control border-main" id="floatingInputValue" placeholder="تاریخ درج اطلاعیه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ درج اطلاعیه</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="آدرس">
-                <label class="fs-14 font-bold text-orange" for="floatingSelect">آدرس</label>
+                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="متن اطلاعیه">
+                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">متن اطلاعیه</label>
               </div>
             </div>
             <div class="col-12">
@@ -146,8 +110,8 @@
                   <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple="">
                   <label for="file-7"><span class="w-100">هنوز فایلی انتخاب نشده است</span><strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>بارگزاری فرم</strong></label>
                 </div>
-                <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">بارگزاری جواز شرکت</label>
-                <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت جواز شرکت حتما باید jpeg,png یا pdf
+                <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">بارگزاری فایل اطلاعیه</label>
+                <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت فایل اطلاعیه حتما باید jpeg,png یا pdf
                   باشد.</small>
               </div>
             </div>
@@ -692,12 +656,19 @@
                   <td>۱</td>
                   <td>
                     <a>
-                      شرکت توسعه کسب و کار ماهور (MO)
+                      پیام از شرکت هیتا
                     </a>
                   </td>
-                  <td>یعقوب خدری</td>
                   <td>
-                    <a></a>
+                    با سلام خدمت همکار عزیز لطفا جهت انجام پروژه جدید تماس بگیرید.
+                  </td>
+                  <td>
+                    <a>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="text-danger bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                        <path d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"/>
+                      </svg>
+                    </a>
                   </td>
                   <td>1402/09/33</td>
                   <td>
