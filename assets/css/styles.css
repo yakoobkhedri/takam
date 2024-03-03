@@ -574,7 +574,23 @@
       display: block;
     }
   }
+  /* keyframe */
+  .fadeAnimation{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 1;
+    }
   
+    50% {
+      opacity: 0.6;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
   /* responsive */
   @media only screen and (max-width: 1400px) {
     .mt-xxl-118 {
