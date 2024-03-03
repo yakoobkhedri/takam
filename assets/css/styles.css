@@ -619,6 +619,10 @@
   .form-floating > label {
     top: -6px;
   }
+  .modal-container.active{
+    visibility: hidden;
+    opacity: 0;
+  }
   /* responsive */
   @media only screen and (max-width: 1400px) {
     .mt-xxl-118 {

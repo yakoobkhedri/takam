@@ -199,6 +199,17 @@ tab6.forEach((tab) => {
   });
 });
 
+// modal
+
+let closeModal=Array.from(document.getElementsByClassName('close-button'));
+
+closeModal.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.parentElement.parentElement.classList.add('active');
+    item.parentElement.parentElement.parentElement.classList.remove('d-block')
+  })
+})
+
 // datapicker
 
 jalaliDatepicker.startWatch();
