@@ -619,6 +619,10 @@
   .form-floating > label {
     top: -6px;
   }
+  .modal-container{
+    visibility: visible;
+    opacity: 100;
+  }
   .modal-container.active{
     visibility: hidden;
     opacity: 0;
