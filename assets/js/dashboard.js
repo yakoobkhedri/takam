@@ -199,6 +199,10 @@ tab6.forEach((tab) => {
   });
 });
 
+// datapicker
+
+jalaliDatepicker.startWatch();
+
 // modal
 
 let closeModal=Array.from(document.getElementsByClassName('close-button'));
@@ -217,6 +221,3 @@ closeModal.forEach((item)=>{
   })
 })
 
-// datapicker
-
-jalaliDatepicker.startWatch();

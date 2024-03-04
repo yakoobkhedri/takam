@@ -82,6 +82,9 @@
   .border-bottom--main {
     border: 1px solid #db5f19 !important;
   }
+  .border-bottom-main {
+    border-bottom: 1px solid #db5f19 !important;
+  }
   /* width */
   .w-4 {
     width: 4px;
