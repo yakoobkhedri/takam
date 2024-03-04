@@ -13,7 +13,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
   <link rel="stylesheet" href="assets/css/jalalidatepicker.min.css">
   <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-  <title>گزارش</title>
+  <title>گزارش همکاران</title>
 </head>
 
 <body>
@@ -481,7 +481,14 @@
             </div>
             <div class="dropdownContent fs-14">
               <div class="pt-3">
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3  text-muted ">
+                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="14" height="14" rx="2" fill="#E65100" />
+                  </svg>
+                  <p class="mb-0">کارکرد</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
                   <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="14" height="14" rx="2" fill="#E65100" />
@@ -655,6 +662,19 @@
              <input type="submit" value="اعمال" class="btn btn-success">
             </div>
           </form>
+        </div>
+       <div class="py-4 px-3">
+         <p class="bg-danger btn text-center mb-0 text-white font-bold w-100">کارکردی یافت نشد</p>
+        </div> 
+        <div class="py-4 px-3 d-flex align-items-center justify-content-between flex-wrap gap-3">
+           <div class="d-flex align-items-center gap-2 flex-wrap">
+            <div class="rounded-8 border-main py-3 px-4 fw-bold fs-14 text-orange">کل کارکرد در این بازه زمانی</div>
+            <div class="rounded-8 border-main py-3 px-4 fw-bold fs-14 text-success">126 ساعت</div>
+           </div>
+           <div class="d-flex align-items-center gap-2 flex-wrap">
+            <div class="rounded-8 border-main py-3 px-4 fw-bold fs-14 text-orange">کل مبلغ کارکرد در این بازه زمانی</div>
+            <div class="rounded-8 border-main py-3 px-4 fw-bold fs-14 text-success">8,890,000 هزار تومان</div>
+           </div>
         </div>
         <div class="py-4 px-3">
           <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-3 mt-4">

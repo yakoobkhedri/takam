@@ -313,6 +313,9 @@
   .-right-35 {
     right: -35px !important;
   }
+  .-right-75 {
+    right: -75px !important;
+  }
   .-right-93 {
     right: -93px !important;
   }
@@ -629,6 +632,10 @@
   .modal-container.active{
     visibility: hidden;
     opacity: 0;
+  }
+  /* ck editor */
+  .cke_top {
+    background: #db5f1929 !important;
   }
   /* responsive */
   @media only screen and (max-width: 1400px) {

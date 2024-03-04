@@ -46,9 +46,10 @@
               </div>
             </div>
             <div class="col-12">
+              <label class="-right-75 fs-14 font-bold text-orange" for="floatingInputValue">متن اطلاعیه</label>
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="متن اطلاعیه">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">متن اطلاعیه</label>
+                  <!-- ck editor -->
+                  <textarea class="textarea form-control border-main"></textarea>
               </div>
             </div>
             <div class="col-12">
@@ -99,9 +100,10 @@
               </div>
             </div>
             <div class="col-12">
+              <label class="-right-75 fs-14 font-bold text-orange" for="floatingInputValue">متن اطلاعیه</label>
               <div class="form-floating">
-                <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="متن اطلاعیه">
-                <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">متن اطلاعیه</label>
+                  <!-- ck editor -->
+                  <textarea class="textarea form-control border-main"></textarea>
               </div>
             </div>
             <div class="col-12">
@@ -751,10 +753,19 @@
   </main>
 
 
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/editor/laravel-ckeditor/ckeditor.js"></script>
+  <script src="assets/js/editor/laravel-ckeditor/adapters/jquery.js"></script>
   <script src="assets/js/jalalidatepicker.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/dashboard.js"></script>
   <script src="assets/js/custom-file-input.js"></script>
+  <script>
+    var textarea = {
+             language: 'fa',
+         };
+         $('.textarea').ckeditor(textarea);
+   </script>
 
 </body>
 
