@@ -1,3 +1,34 @@
+// show partner list
+
+let showPartnerContent=Array.from(document.getElementsByClassName('showPartnerContent'));
+let showPartnerContent2=Array.from(document.getElementsByClassName('showPartnerContent2'));
+let hidePartnerContent=Array.from(document.getElementsByClassName('hidePartnerContent'));
+let hidePartnerContent2=Array.from(document.getElementsByClassName('hidePartnerContent2'));
+
+showPartnerContent.forEach((item)=>{
+  item.addEventListener('click',function () {
+    document.querySelector('.partnerContent').classList.add('active');
+  })
+})
+
+hidePartnerContent.forEach((item)=>{
+  item.addEventListener('click',function () {
+    document.querySelector('.partnerContent').classList.remove('active');
+  })
+})
+
+showPartnerContent2.forEach((item)=>{
+  item.addEventListener('click',function () {
+    document.querySelector('.partnerContent2').classList.add('active');
+  })
+})
+
+hidePartnerContent2.forEach((item)=>{
+  item.addEventListener('click',function () {
+    document.querySelector('.partnerContent2').classList.remove('active');
+  })
+})
+
 // sidebar menu
 
 let hamIcon = document.getElementById("hamIcon");
@@ -220,4 +251,3 @@ closeModal.forEach((item)=>{
     item.parentElement.parentElement.parentElement.classList.remove('d-block')
   })
 })
-
