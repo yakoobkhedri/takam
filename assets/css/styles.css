@@ -159,6 +159,9 @@
   .h-40 {
     height: 40px;
   }
+  .h-44 {
+    height: 44px!important;
+  }
   .h-48 {
     height: 48px;
   }
