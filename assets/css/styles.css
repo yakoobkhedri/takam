@@ -632,11 +632,12 @@
     }
   }
   /* modal input */
-  .modal-body input:not(input[type='checkbox'],input[type='number']){
-    height: 44px!important;
+  input:not(input[type='checkbox'],input[type='number']){
+    height: 35px!important;
+    border-radius: 8px;
   }
   .form-floating > label {
-    top: -6px;
+    top: -8px;
   }
   .modal-container{
     visibility: visible;
