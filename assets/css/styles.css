@@ -421,13 +421,16 @@
     background-color: #f2f2f2;
   }
   /* dropdown */
-  aside li.active svg:last-child {
+  aside li.active svg:last-child  {
     transform: rotate(90deg);
   }
-  aside li.active .dropdownContent,.dropdownContent2.active {
+.dropdownBtn3 svg:last-child.active  {
+    transform: rotate(0deg);
+  }
+  aside li.active .dropdownContent,.dropdownContent2.active,.dropdownContent3.active {
     max-height: 2000px;
   }
-  .dropdownBtn svg {
+  .dropdownBtn svg,.dropdownBtn3 svg {
     transition: all 0.4s;
   }
   .showFish.active {
@@ -458,6 +461,7 @@
   }
   .dropdownContent,
   .dropdownContent2,
+  .dropdownContent3,
   .fishContent,
   .taskContent,
   .partnerContent,
