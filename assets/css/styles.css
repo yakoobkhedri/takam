@@ -154,7 +154,7 @@
     height: 30px;
   }
   .h-35 {
-    height: 35px;
+    height: 35px!important;
   }
   .h-40 {
     height: 40px;
@@ -312,6 +312,9 @@
   .-top-14 {
     top: -14px !important;
   }
+  .-top-17{
+    top: -17px!important;
+  }
   .-top-40 {
     top: -40px !important;
   }
@@ -414,9 +417,6 @@
     scroll-margin: 29px 0;
   }
   /* aside */
-  aside li {
-    border-radius: 7px;
-  }
   aside li:hover {
     background-color: #f2f2f2;
   }
@@ -509,6 +509,9 @@
     background-color: #db5f19;
     border-color: #db5f19;
   }
+  textarea{
+    border-radius: 8px!important;
+  }
   /* pagination */
   .pagination li {
     width: 30px;
@@ -563,9 +566,7 @@
     vertical-align: middle;
     fill: currentColor;
     margin-top: -0.25em;
-    /* 4px */
     margin-right: 0.25em;
-    /* 4px */
   }
   /* style 6 */
   
@@ -575,6 +576,7 @@
   
   .inputfile-6 + label {
     border: 1px solid #db5f19;
+    border-radius: 8px;
     padding: 0;
   }
   
@@ -636,9 +638,14 @@
     }
   }
   /* modal input */
-  input:not(input[type='checkbox'],input[type='number']){
+  input:not(input[type='checkbox'],input[type='number']),select{
     height: 35px!important;
     border-radius: 8px;
+  }
+  select{
+    padding-top: 0!important;
+  padding-bottom:0!important;
+  border-radius: 8px!important;
   }
   .form-floating > label {
     top: -8px;
