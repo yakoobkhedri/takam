@@ -18,6 +18,88 @@
 
 <body>
 
+     <!-- new work Modal -->
+     <div class="modal fade" id="newWorkModal" data-bs-backdrop="static" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered max-w-591">
+       <form class="modal-content">
+         <div class="modal-header border-0">
+           <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">کار جدید</h1>
+           <div class="d-flex align-items-center gap-2">
+             <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+               class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+               <path
+                 d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+             </svg>
+           </div>
+         </div>
+         <div class="modal-body border-0 ">
+           <p class="mb-0 fs-14 font-bold">کاربر گرامی لطفا اطلاعات درخواستی را با دقت وارد کنید.</p>
+           <div class="row g-3 mx-0 mt-0">
+             <div class="col-12">
+               <div class="form-floating">
+                 <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
+                   <option selected="">شرکت هیتا</option>
+                   <option value="1">شرکت آرا</option>
+                   <option value="2">شرکت اهورا</option>
+                 </select>
+                 <label class="fs-14 font-bold text-orange -right-35 -top-17" for="floatingSelect">نام شرکت جدید</label>
+               </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="form-floating">
+                 <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان کار">
+                 <label class="fs-14 font-bold text-orange" for="floatingSelect">عنوان کار</label>
+               </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="form-floating">
+                 <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
+                   <option selected="">شرکت هیتا</option>
+                   <option value="1">شرکت آرا</option>
+                   <option value="2">شرکت اهورا</option>
+                 </select>
+                 <label class="fs-14 font-bold text-orange -right-35 -top-17" for="floatingSelect">مجری کار</label>
+               </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="form-floating h-35">
+                 <input type="number" min="1" class="form-control border-main h-35 rounded-8" value="1" id="floatingInputValue">
+                 <label class="-right-35 fs-14 font-bold text-orange mt-1 -top-17" for="floatingInputValue">مدت زمان پیشنهادی (ساعت)</label>
+               </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="form-floating">
+                 <input data-jdp="" type="text" class="form-control border-main" id="floatingInputValue" placeholder="تاریخ پیشنهادی">
+                 <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ پیشنهادی</label>
+               </div>
+             </div>
+             <div class="col-12">
+               <div class="form-floating">
+                 <textarea class="form-control border-main" id="floatingInputValue" placeholder="عنوان کار"></textarea>
+                 <label class="fs-14 font-bold text-orange" for="floatingSelect">توضیحات</label>
+               </div>
+             </div>
+             <div class="col-12">
+               <div class="form-floating">
+                 <div class="box pt-34">
+                   <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple="">
+                   <label for="file-7"><span class="w-100">هنوز فایلی انتخاب نشده است</span><strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>بارگزاری فایل</strong></label>
+                 </div>
+                 <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">بارگزاری فایل</label>
+                 <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت فرم حتما باید jpeg,png یا pdf
+                   باشد.</small>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer justify-content-center ">
+           <button type="button" class="btn btn-sm btn-success">افزودن</button>
+         </div>
+       </form>
+     </div>
+     </div>
+
   <!-- overlay -->
   <div id="overlay" class="position-fixed end-0 start-0 bottom-0 top-0"></div>
   <main>
@@ -26,19 +108,19 @@
         <div class="p-3">
           <div class="position-relative w-101 mx-auto">
             <img alt="avatar" src="assets/img/avatar.png"
-            class="rounded-circle border-main-2 h-101 w-101 mx-auto d-block img-fluid">
+              class="rounded-circle border-main-2 h-101 w-101 mx-auto d-block img-fluid">
           </div>
           <p class="mb-1 mt-2 text-orange text-center font-bold">یعقوب خدری</p>
           <p class="mb-0 text-center font-bold fs-14">برنامه نویس فرانت اند</p>
         </div>
-        <div class="d-flex align-items-center justify-content-between mt-4 gap-2 px-3">
-          <div
-            class="rounded-4 border border-2 d-flex align-items-center gap-2  px-2 h-30 flex-grow-1 shadow-sm cursor-pointer">
+        <div class="d-flex align-items-center justify-content-between gap-2 px-2">
+          <div data-bs-toggle="modal" data-bs-target="#newWorkModal"
+            class="rounded-4 border border-2 d-flex align-items-center gap-2 px-2 h-40 flex-grow-1 shadow-sm cursor-pointer">
             <p class="mb-0 fw-bold fs-12">کار جدید</p>
             <p class="mb-0 fw-bold">+</p>
           </div>
           <div
-            class="d-flex align-items-center justify-content-center border border-2 rounded-4 shadow-sm cursor-pointer h-30 w-30">
+            class="d-flex align-items-center justify-content-center border border-2 rounded-4 shadow-sm cursor-pointer h-40 w-40">
             <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.4143 11L14.9142 14.5" stroke="#6B6F76" stroke-width="2" stroke-linecap="round" />
               <circle cx="6.5" cy="6.5" r="6" fill="#F2F2F2" stroke="#6B6F76" />
@@ -69,15 +151,22 @@
             </a>
           </li>
           <li class="d-block mb-3 px-3 py-1">
+            <a class="d-flex align-items-center gap-2 text-dark">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 2C0 0.89543 0.895431 0 2 0H12C13.1046 0 14 0.895431 14 2V12C14 13.1046 13.1046 14 12 14H2C0.89543 14 0 13.1046 0 12V2Z"
+                  fill="#E65100" />
+                <rect x="2" y="2" width="10" height="10" rx="2" fill="white" />
+                <path d="M7 7V4" stroke="#E65100" stroke-linecap="round" />
+                <path d="M7 7L10 6.56128" stroke="#E65100" stroke-linecap="round" />
+              </svg>
+              <p class="mb-0">عقربه</p>
+            </a>
+          </li>
+          <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-cash-coin text-orange" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
-                <path
-                  d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
-                <path
-                  d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
-                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclude text-orange" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1z"/>
               </svg>
               <p class="mb-0">لیست شرکت ها</p>
               <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
@@ -96,7 +185,7 @@
                   </svg>
                   <p class="mb-0">شرکت های فعال</p>
                 </a>
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                <a class="d-flex align-items-center gap-2 cursor-pointer text-muted ">
                   <svg class="rounded-circle flex-shrink-0 " width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="14" height="14" rx="2" fill="#E65100" />
@@ -105,19 +194,6 @@
                 </a>
               </div>
             </div>
-          </li>
-          <li class="d-block mb-3 px-3 py-1">
-            <a class="d-flex align-items-center gap-2 text-dark">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 2C0 0.89543 0.895431 0 2 0H12C13.1046 0 14 0.895431 14 2V12C14 13.1046 13.1046 14 12 14H2C0.89543 14 0 13.1046 0 12V2Z"
-                  fill="#E65100" />
-                <rect x="2" y="2" width="10" height="10" rx="2" fill="white" />
-                <path d="M7 7V4" stroke="#E65100" stroke-linecap="round" />
-                <path d="M7 7L10 6.56128" stroke="#E65100" stroke-linecap="round" />
-              </svg>
-              <p class="mb-0">عقربه</p>
-            </a>
           </li>
           <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
@@ -154,7 +230,7 @@
                   </svg>
                   <p class="mb-0">صورتحساب من</p>
                 </a>
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                <a class="d-flex align-items-center gap-2 cursor-pointer text-muted ">
                   <svg class="rounded-circle flex-shrink-0 " width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="14" height="14" rx="2" fill="#E65100" />
@@ -182,7 +258,7 @@
             </div>
             <div class="dropdownContent fs-14">
               <div class="pt-3">
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                <a class="d-flex align-items-center gap-2 cursor-pointer text-muted ">
                   <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="14" height="14" rx="2" fill="#E65100" />
@@ -194,8 +270,10 @@
           </li>
           <li class="d-block mb-3 px-3 py-1">
             <div class="dropdownBtn d-flex align-items-center gap-2 cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill text-orange" viewBox="0 0 16 16">
-                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-people-fill text-orange" viewBox="0 0 16 16">
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
               </svg>
               <p class="mb-0">همکاران</p>
               <svg class="mt-1 me-auto" width="12" height="12" viewBox="0 0 8 6" fill="none"
@@ -207,7 +285,7 @@
             </div>
             <div class="dropdownContent fs-14">
               <div class="pt-3">
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                <a class="d-flex align-items-center gap-2 cursor-pointer text-muted ">
                   <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="14" height="14" rx="2" fill="#E65100" />
@@ -241,7 +319,7 @@
                   </svg>
                   <p class="mb-0">کارکرد</p>
                 </a>
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3 text-muted ">
+                <a class="d-flex align-items-center gap-2 cursor-pointer text-muted ">
                   <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="14" height="14" rx="2" fill="#E65100" />
@@ -295,22 +373,109 @@
                   fill="#90959D" />
               </svg>
             </div>
-            <div class="dropdownContent fs-14">
+            <div class="dropdownContent fs-14 pe-2">
               <div class="pt-3">
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3  text-muted">
-                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                <div>
+                  <div class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3  text-muted">
+                    <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="14" height="14" rx="2" fill="#E65100" />
+                    </svg>
+                    <p class="mb-0">وب سایت ها</p>
+                    <svg class="mt-1 me-auto" width="9" height="9" viewBox="0 0 8 6" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <rect width="14" height="14" rx="2" fill="#E65100" />
-                  </svg>
-                  <p class="mb-0">پروژه ها</p>
-                </a>
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3  text-muted">
-                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                    <path
+                      d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                      fill="#90959D" />
+                    </svg>
+                  </div>
+                  <div class="dropdownContent3 fs-14 pe-2">
+                    <div>
+                        <a class="d-flex align-items-center gap-2 cursor-pointer text-success mb-3">
+                          <svg class="rounded-circle" width="8" height="8" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">اهورا</p>
+                        </a>
+                        <a class="d-flex align-items-center gap-2 cursor-pointer text-success mb-3">
+                          <svg class="rounded-circle" width="8" height="8" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">آرا</p>
+                        </a>
+                        <a class="d-flex align-items-center gap-2 cursor-pointer text-success mb-3">
+                          <svg class="rounded-circle" width="8" height="8" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">هیتا</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3  text-muted">
+                    <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="14" height="14" rx="2" fill="#E65100" />
+                    </svg>
+                    <p class="mb-0">پروژه ها</p>
+                    <svg class="mt-1 me-auto" width="9" height="9" viewBox="0 0 8 6" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <rect width="14" height="14" rx="2" fill="#E65100" />
-                  </svg>
-                  <p class="mb-0">وب سایت ها</p>
-                </a>
+                    <path
+                      d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                      fill="#90959D" />
+                    </svg>
+                  </div>
+                  <div class="dropdownContent3 fs-14 pe-2">
+                    <div class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3  text-primary">
+                      <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="14" height="14" rx="2" fill="#E65100" />
+                      </svg>
+                      <p class="mb-0">شرکت ماهور</p>
+                      <svg class="mt-1 me-auto" width="9" height="9" viewBox="0 0 8 6" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                        fill="#90959D" />
+                      </svg>
+                    </div>
+                    <div class="dropdownContent3 fs-14 pe-2">
+                      <div class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3  text-purple">
+                        <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect width="14" height="14" rx="2" fill="#E65100" />
+                        </svg>
+                        <p class="mb-0">نرم افزار فام</p>
+                        <svg class="mt-1 me-auto" width="9" height="9" viewBox="0 0 8 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                          fill="#90959D" />
+                        </svg>
+                      </div>
+                      <div class="dropdownContent3 fs-14 pe-2">
+                        <a class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3 text-success">
+                          <svg class="rounded-circle" width="7" height="7" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">مدیریت فرایند</p>
+                        </a>
+                        <a class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3 text-success">
+                          <svg class="rounded-circle" width="7" height="7" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">مدیریت بهره وری</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <a class="d-flex align-items-center gap-2 cursor-pointer mb-3  text-muted">
                   <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -318,13 +483,46 @@
                   </svg>
                   <p class="mb-0">سامانه ها</p>
                 </a>
-                <a class="d-flex align-items-center gap-2 cursor-pointer mb-3  text-muted">
-                  <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                <div>
+                  <div class="d-flex dropdownBtn3 align-items-center gap-2 cursor-pointer mb-3  text-muted">
+                    <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="14" height="14" rx="2" fill="#E65100" />
+                    </svg>
+                    <p class="mb-0">رخداد ها</p>
+                    <svg class="mt-1 me-auto" width="9" height="9" viewBox="0 0 8 6" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <rect width="14" height="14" rx="2" fill="#E65100" />
-                  </svg>
-                  <p class="mb-0">رخداد ها</p>
-                </a>
+                    <path
+                      d="M4.43301 5.25C4.24056 5.58333 3.75944 5.58333 3.56699 5.25L0.968911 0.75C0.776461 0.416667 1.01702 0 1.40192 0L6.59808 0C6.98298 0 7.22354 0.416667 7.03109 0.75L4.43301 5.25Z"
+                      fill="#90959D" />
+                    </svg>
+                  </div>
+                  <div class="dropdownContent3 fs-14 pe-2">
+                    <div>
+                        <a class="d-flex align-items-center gap-2 cursor-pointer text-success mb-3">
+                          <svg class="rounded-circle" width="8" height="8" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">اهورا</p>
+                        </a>
+                        <a class="d-flex align-items-center gap-2 cursor-pointer text-success mb-3">
+                          <svg class="rounded-circle" width="8" height="8" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">آرا</p>
+                        </a>
+                        <a class="d-flex align-items-center gap-2 cursor-pointer text-success mb-3">
+                          <svg class="rounded-circle" width="8" height="8" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="14" rx="2" fill="#E65100" />
+                          </svg>
+                          <p class="mb-0">هیتا</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
                 <a class="d-flex align-items-center gap-2 cursor-pointer mb-3  text-muted">
                   <svg class="rounded-circle" width="10" height="10" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

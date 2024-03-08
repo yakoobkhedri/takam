@@ -2,8 +2,10 @@
 
 let showPartnerContent=Array.from(document.getElementsByClassName('showPartnerContent'));
 let showPartnerContent2=Array.from(document.getElementsByClassName('showPartnerContent2'));
+let showPartnerContent3=Array.from(document.getElementsByClassName('showPartnerContent3'));
 let hidePartnerContent=Array.from(document.getElementsByClassName('hidePartnerContent'));
 let hidePartnerContent2=Array.from(document.getElementsByClassName('hidePartnerContent2'));
+let hidePartnerContent3=Array.from(document.getElementsByClassName('hidePartnerContent3'));
 
 showPartnerContent.forEach((item)=>{
   item.addEventListener('click',function () {
@@ -22,13 +24,21 @@ showPartnerContent2.forEach((item)=>{
     document.querySelector('.partnerContent2').classList.add('active');
   })
 })
-
+showPartnerContent3.forEach((item)=>{
+  item.addEventListener('click',function () {
+    document.querySelector('.partnerContent3').classList.add('active');
+  })
+})
 hidePartnerContent2.forEach((item)=>{
   item.addEventListener('click',function () {
     document.querySelector('.partnerContent2').classList.remove('active');
   })
 })
-
+hidePartnerContent3.forEach((item)=>{
+  item.addEventListener('click',function () {
+    document.querySelector('.partnerContent3').classList.remove('active');
+  })
+})
 // sidebar menu
 
 let hamIcon = document.getElementById("hamIcon");
@@ -47,6 +57,7 @@ hamIcon.addEventListener("click", function () {
 const dropdownBtn = Array.from(document.getElementsByClassName("dropdownBtn"));
 const dropdownBtn2 = Array.from(document.getElementsByClassName("dropdownBtn2"));
 const dropdownBtn3 = Array.from(document.getElementsByClassName("dropdownBtn3"));
+const dropdownBtn4 = Array.from(document.getElementsByClassName("dropdownBtn4"));
 const dropdownContent = Array.from(
   document.getElementsByClassName("dropdownContent")
 );
@@ -73,6 +84,12 @@ const openDropdown = Array.from(
   document.getElementsByClassName("openDropdown")
 );
 const dropdown = Array.from(document.getElementsByClassName("dropdown"));
+
+dropdownBtn4.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 
 dropdownBtn2.forEach((item)=>{
   item.addEventListener('click',function () {

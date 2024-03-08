@@ -100,6 +100,78 @@
     </div>
   </div>
 
+      <!-- new work Modal 2 -->
+      <div class="modal fade" id="newWorkModal2" data-bs-backdrop="static" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered max-w-591">
+        <form class="modal-content">
+          <div class="modal-header border-0">
+            <h1 class="modal-title h6 font-bold text-orange" id="exampleModalLabel">کار جدید</h1>
+            <div class="d-flex align-items-center gap-2">
+              <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-x text-danger cursor-pointer" viewBox="0 0 16 16">
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </div>
+          </div>
+          <div class="modal-body border-0 ">
+            <p class="mb-0 fs-14 font-bold">کاربر گرامی لطفا اطلاعات درخواستی را با دقت وارد کنید.</p>
+            <div class="row g-3 mx-0 mt-0">
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control border-main" id="floatingInputValue" placeholder="عنوان کار">
+                  <label class="fs-14 font-bold text-orange" for="floatingSelect">عنوان کار</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected="">شرکت هیتا</option>
+                    <option value="1">شرکت آرا</option>
+                    <option value="2">شرکت اهورا</option>
+                  </select>
+                  <label class="fs-14 font-bold text-orange -right-35 -top-17" for="floatingSelect">مجری کار</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating h-35">
+                  <input type="number" min="1" class="form-control border-main h-35 rounded-8" value="1" id="floatingInputValue">
+                  <label class="-right-35 fs-14 font-bold text-orange mt-1 -top-17" for="floatingInputValue">مدت زمان پیشنهادی (ساعت)</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input data-jdp="" type="text" class="form-control border-main" id="floatingInputValue" placeholder="تاریخ پیشنهادی">
+                  <label class="end-0 fs-14 font-bold text-orange" for="floatingInputValue">تاریخ پیشنهادی</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control border-main" id="floatingInputValue" placeholder="عنوان کار"></textarea>
+                  <label class="fs-14 font-bold text-orange" for="floatingSelect">توضیحات</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <div class="box pt-34">
+                    <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-6 d-none " data-multiple-caption="{count} files selected" multiple="">
+                    <label for="file-1"><span class="w-100">هنوز فایلی انتخاب نشده است</span><strong><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>بارگزاری فایل</strong></label>
+                  </div>
+                  <label class="fs-14 font-bold text-orange -top-14" for="floatingInputValue">بارگزاری فایل</label>
+                  <small class="d-block mt-2 fs-12 font-bold text-orange">فرمت فرم حتما باید jpeg,png یا pdf
+                    باشد.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center ">
+            <button type="button" class="btn btn-sm btn-success">افزودن</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
   <!-- overlay -->
   <div id="overlay" class="position-fixed end-0 start-0 bottom-0 top-0"></div>
   <main>
@@ -582,6 +654,8 @@
               <input placeholder="جستجو..." class="bg-transparent w-100 border-0 outline-none">
             </form>
             <div class="d-flex align-items-center flex-wrap gap-2">
+              <a data-bs-toggle="modal" data-bs-target="#newWorkModal2" class="btn-success btn-sm rounded-4 py-2 px-4 text-white font-bold fs-12 d-table">افزودن کار
+                جدید</a>
               <div class="d-flex align-items-center gap-2">
                 <p class="mb-0 font-bold">تعداد نمایش:</p>
                 <select class="bg-transparent border-main rounded-4 px-4">

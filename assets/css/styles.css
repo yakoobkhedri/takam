@@ -462,10 +462,12 @@
   .dropdownContent,
   .dropdownContent2,
   .dropdownContent3,
+  .dropdownContent4,
   .fishContent,
   .taskContent,
   .partnerContent,
-  .partnerContent2 {
+  .partnerContent2,
+  .partnerContent3 {
     max-height: 0;
     transition: all 0.4s;
     overflow: hidden;
@@ -473,7 +475,9 @@
   .fishContent.active,
   .taskContent.active,
   .partnerContent.active,
-  .partnerContent2.active {
+  .partnerContent2.active,
+  .partnerContent3.active,
+  .dropdownContent4.active {
     max-height: 2000px;
   }
   #overlay {
