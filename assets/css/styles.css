@@ -22,7 +22,9 @@
   .font-bold {
     font-family: "IRANSans-Bold";
   }
-  
+  select{
+    font-family: revert;
+  }
   a {
     cursor: pointer;
     text-decoration: none;
@@ -297,6 +299,21 @@
   }
   .bg-gray {
     background-color: #f5f5f5;
+  }
+  .bg-gray1{
+    background-color: #c1c1c1;
+  }
+  .bg-gray2 {
+    background-color: #cfcfcf;
+  }
+  .bg-gray3 {
+    background-color: #e2e2e2;
+  }
+  .bg-gray4 {
+    background-color: #f1f0f0;
+  }
+  .bg-gray5 {
+    background-color: #fafafa;
   }
   .bg-darkblue {
     background-color: #001b2e;
