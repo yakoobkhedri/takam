@@ -30,7 +30,7 @@
     text-decoration: none;
     transition: all 0.4s;
   }
-  .transition {
+  .transition,.dropdownBtn3 {
     transition: all 0.4s;
   }
   
@@ -324,6 +324,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .dropdownBtn3:hover{
+    background-color: lightgray;
+  }
   /* transition */
   .transition {
     transition: all 0.4s;
@@ -447,7 +450,7 @@
 .dropdownBtn3 svg:last-child.active  {
     transform: rotate(0deg);
   }
-  aside li.active .dropdownContent,.dropdownContent2.active,.dropdownContent3.active {
+  aside li.active .dropdownContent,.dropdownContentselect.active ,.dropdownContent2.active,.dropdownContent3.active {
     max-height: 2000px;
   }
   .dropdownBtn svg,.dropdownBtn3 svg {
@@ -483,6 +486,7 @@
   .dropdownContent2,
   .dropdownContent3,
   .dropdownContent4,
+  .dropdownContentselect,
   .fishContent,
   .taskContent,
   .partnerContent,

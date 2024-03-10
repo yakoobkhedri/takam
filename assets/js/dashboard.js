@@ -58,6 +58,7 @@ const dropdownBtn = Array.from(document.getElementsByClassName("dropdownBtn"));
 const dropdownBtn2 = Array.from(document.getElementsByClassName("dropdownBtn2"));
 const dropdownBtn3 = Array.from(document.getElementsByClassName("dropdownBtn3"));
 const dropdownBtn4 = Array.from(document.getElementsByClassName("dropdownBtn4"));
+const dropdownBtnSelect = Array.from(document.getElementsByClassName("dropdownBtnselect"));
 const dropdownContent = Array.from(
   document.getElementsByClassName("dropdownContent")
 );
@@ -66,6 +67,9 @@ const dropdownContent2 = Array.from(
 );
 const dropdownContent3 = Array.from(
   document.getElementsByClassName("dropdownContent3")
+);
+const dropdownContentSelect = Array.from(
+  document.getElementsByClassName("dropdownContentselect")
 );
 const showFish = Array.from(document.getElementsByClassName("showFish"));
 const addTask = Array.from(document.getElementsByClassName("addTask"));
@@ -80,10 +84,31 @@ const tabContent2 = Array.from(document.getElementsByClassName("tab-content2"));
 const tabContent4 = Array.from(document.getElementsByClassName("tab-content4"));
 const tabContent5 = Array.from(document.getElementsByClassName("tab-content5"));
 const tabContent6 = Array.from(document.getElementsByClassName("tab-content6"));
+const select1 = Array.from(document.getElementsByClassName("select1"));
+const select2=Array.from(document.querySelectorAll('.select2 a'));
 const openDropdown = Array.from(
   document.getElementsByClassName("openDropdown")
 );
 const dropdown = Array.from(document.getElementsByClassName("dropdown"));
+
+select1.forEach((item)=>{
+  item.addEventListener('click',function () {
+    let itemText=item.querySelector('p').textContent;
+    item.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=itemText;
+  })
+})
+
+select2.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
+  })
+})
+
+dropdownBtnSelect.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 
 dropdownBtn4.forEach((item)=>{
   item.addEventListener('click',function () {
