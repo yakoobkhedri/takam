@@ -30,7 +30,7 @@
     text-decoration: none;
     transition: all 0.4s;
   }
-  .transition,.dropdownBtn3 {
+  .transition,.dropdownBtn3,.select3 {
     transition: all 0.4s;
   }
   
@@ -324,7 +324,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .dropdownBtn3:hover{
+  .dropdownBtn3:hover,.select3:hover{
     background-color: lightgray;
   }
   /* transition */

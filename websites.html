@@ -46,7 +46,7 @@
                       <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                     </svg>
                   </div>
-                  <div class="dropdownContentselect h-340 overflow-auto fs-14 position-absolute w-100 end-0 start-0 bg-white shadow-sm">
+                  <div class="dropdownContentselect z-10 h-215 overflow-auto fs-14 position-absolute w-100 end-0 start-0 bg-white shadow-sm">
                     <div>
                       <div>
                         <div class="d-flex dropdownBtn3 select1 px-3 align-items-center gap-2 cursor-pointer py-2 bg-gray">
@@ -142,11 +142,33 @@
             <div class="col-sm-6">
               <div>
                 <label class="fs-14 font-bold text-orange -right-35 -top-17" for="floatingSelect">مجری کار</label>
-                <select class="form-select border-main" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected="">یعقوب خدری</option>
-                  <option value="1">رضا احمدی</option>
-                  <option value="2">محمد غفاری</option>
-                </select>
+                <div class="d-block position-relative dropdownArea">
+                  <div class="dropdownBtnselect border-main h-35 rounded-8 px-3 py-2 d-flex align-items-center gap-2 cursor-pointer">
+                    <p class="mb-0">یعقوب خدری</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="me-auto bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdownContentselect h-215 overflow-auto fs-14 position-absolute w-100 end-0 start-0 bg-white shadow-sm">
+                    <div>
+                      <div>
+                        <div class="d-flex select3 px-3 align-items-center gap-2 cursor-pointer py-2">
+                            <p class="mb-0 w-100">یعقوب خدری</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="d-flex select3 px-3 align-items-center gap-2 cursor-pointer py-2">
+                            <p class="mb-0 w-100">احمد رضایی</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="d-flex select3 px-3 align-items-center gap-2 cursor-pointer py-2">
+                            <p class="mb-0 w-100">محمد احمدی</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">

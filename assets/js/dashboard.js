@@ -87,11 +87,19 @@ const tabContent6 = Array.from(document.getElementsByClassName("tab-content6"));
 const select1 = Array.from(document.getElementsByClassName("select1"));
 const dropdownContentselect = Array.from(document.getElementsByClassName("dropdownContentselect"));
 const select2=Array.from(document.querySelectorAll('.select2 a'));
+const select3=Array.from(document.querySelectorAll('.select3 p'));
 const openDropdown = Array.from(
   document.getElementsByClassName("openDropdown")
 );
 const dropdown = Array.from(document.getElementsByClassName("dropdown"));
 
+select3.forEach((item)=>{
+  item.addEventListener('click',function () {
+    let itemText=item.textContent;
+    item.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=itemText;
+    item.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
+   })
+})
 select1.forEach((item)=>{
   item.addEventListener('click',function () {
     let itemText=item.querySelector('p').textContent;
@@ -106,7 +114,6 @@ select2.forEach((item)=>{
     item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
   })
 })
-
 dropdownBtnSelect.forEach((item)=>{
   item.addEventListener('click',function () {
     item.nextElementSibling.classList.toggle('active');
