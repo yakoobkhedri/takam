@@ -22,9 +22,6 @@
   .font-bold {
     font-family: "IRANSans-Bold";
   }
-  select{
-    font-family: revert;
-  }
   a {
     cursor: pointer;
     text-decoration: none;
