@@ -85,6 +85,7 @@ const tabContent4 = Array.from(document.getElementsByClassName("tab-content4"));
 const tabContent5 = Array.from(document.getElementsByClassName("tab-content5"));
 const tabContent6 = Array.from(document.getElementsByClassName("tab-content6"));
 const select1 = Array.from(document.getElementsByClassName("select1"));
+const dropdownContentselect = Array.from(document.getElementsByClassName("dropdownContentselect"));
 const select2=Array.from(document.querySelectorAll('.select2 a'));
 const openDropdown = Array.from(
   document.getElementsByClassName("openDropdown")
@@ -100,6 +101,8 @@ select1.forEach((item)=>{
 
 select2.forEach((item)=>{
   item.addEventListener('click',function () {
+    let itemText=item.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
+    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=itemText;
     item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
   })
 })
@@ -109,7 +112,13 @@ dropdownBtnSelect.forEach((item)=>{
     item.nextElementSibling.classList.toggle('active');
   })
 })
-
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.dropdownContentselect')&& !event.target.closest('.dropdownArea')) {
+    dropdownContentselect.forEach((item)=>{
+        item.classList.remove('active');
+    })
+  }
+})
 dropdownBtn4.forEach((item)=>{
   item.addEventListener('click',function () {
     item.nextElementSibling.classList.toggle('active');
