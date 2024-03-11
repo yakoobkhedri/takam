@@ -230,6 +230,9 @@
   .fs-14 {
     font-size: 14px;
   }
+  .fs-15 {
+    font-size: 15px;
+  }
   .fs-16 {
     font-size: 16px;
   }
@@ -561,6 +564,9 @@
     -moz-appearance: textfield;
     appearance: textfield;
     margin: 0;
+  }
+  input::placeholder,textarea::placeholder{
+    font-size: 12px;
   }
   /* file input */
   .js .inputfile {
