@@ -324,7 +324,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .dropdownBtn3:hover,.select3:hover{
+  .dropdownBtn3:hover,.select3:hover,.listHover:hover{
     background-color: lightgray;
   }
   /* transition */
