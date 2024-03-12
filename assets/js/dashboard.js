@@ -106,16 +106,20 @@ select1.forEach((item)=>{
     item.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=itemText;
   })
 })
-
 select2.forEach((item)=>{
   item.addEventListener('click',function () {
-    let itemText=item.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
-    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=itemText;
+    let level5=item.querySelector('p').textContent;
+    let level4=item.parentElement.previousElementSibling.querySelector('p').textContent;
+    let level3=item.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
+    let level2=item.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
+    let level1=item.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
+    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=level1+'/'+level2+'/'+level3+'/'+'/'+level4+'/'+level5;
     item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
   })
 })
 dropdownBtnSelect.forEach((item)=>{
   item.addEventListener('click',function () {
+    dropdownContentSelect.forEach((items)=>items.classList.remove('active'));
     item.nextElementSibling.classList.toggle('active');
   })
 })
