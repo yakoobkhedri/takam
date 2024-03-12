@@ -565,6 +565,9 @@
   textarea{
     border-radius: 8px!important;
   }
+  label{
+    font-size: 12px!important;
+  }
   /* pagination */
   .pagination li {
     width: 30px;
