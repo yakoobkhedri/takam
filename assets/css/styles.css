@@ -465,7 +465,7 @@
       /* creates padding around scroll thumb */
     }
   /* aside */
-  aside li:hover {
+  aside li:hover,aside li.active2 {
     background-color: #f2f2f2;
   }
   /* dropdown */
