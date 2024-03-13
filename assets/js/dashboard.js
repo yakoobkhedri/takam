@@ -113,7 +113,7 @@ select2.forEach((item)=>{
     let level3=item.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
     let level2=item.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
     let level1=item.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent;
-    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=level1+'/'+level2+'/'+level3+'/'+'/'+level4+'/'+level5;
+    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling.querySelector('p').textContent=level1+'  /  '+level2+'  /  '+level3+'  /  '+level4+'  /  '+level5;
     item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
   })
 })
