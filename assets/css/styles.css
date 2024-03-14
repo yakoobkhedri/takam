@@ -369,6 +369,12 @@
     left: auto !important;
   }
   /* padding */
+  .pe-2rem{
+    padding-right: 2rem;
+  }
+  .pe-24rem{
+    padding-right: 2.4rem;
+  }
   .pt-34 {
     padding-top: 34px !important;
   }
