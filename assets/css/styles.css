@@ -633,6 +633,14 @@
     margin-top: -0.25em;
     margin-right: 0.25em;
   }
+  #newWorkModal .dropdownContent3{
+    font-size: 12px!important;
+  }
+  a.btn-success.btn-sm.rounded-4.px-4{
+    padding-right: 10px!important;
+    padding-left: 10px!important;
+    font-size: 10px!important;
+  }
   /* style 6 */
   
   .inputfile-6 + label {
