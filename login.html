@@ -21,13 +21,20 @@
       <div class="w-100 px-4">
         <h4 class="fs-24 font-bold text-center mb-5">ورود</h4>
         <h6 class="font-bold mt-5">همکار عزیز خوش آمدید!</h6>
-        <p class="text-gray">
+        <p class="text-gray fs-12">
             جهت ورود و استفاده از سرویس های مختلف در تکام لطفا شماره موبایل و رمزعبور خود را وارد کنید.
         </p>
         <form class="mt-4">
-            <input placeholder="شماره موبایل" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
-            <input type="password" placeholder="رمز عبور" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
-          <input type="submit" value="تایید" class="rounded-8 h-56 w-100  text-white font-bold bg-darkblue d-lg-flex  d-none   align-items-center  justify-content-center">
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">شماره موبایل <span class="text-danger fw-bold">*</span></label>
+          </div>
+            <div class="form-floating mb-4">
+              <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
+            </div>
+            
+            <input type="submit" value="ورود" class="rounded-8 h-56 w-100  text-white font-bold bg-darkblue d-flex  align-items-center  justify-content-center">
         </form>
       </div>
       <a class="position-absolute d-flex align-items-center gap-2 bottom-0 mb-4">
@@ -43,7 +50,7 @@
     </div>
     <div class="col-lg-8 bg-login flex-grow-1 bg-gray h-100vh">
         <form class="h-100vh overflow-auto hidden-scroll h-lg-auto">
-          <img alt="img" src="assets/img/473402239.jpg" class="img-fluid w-75 mx-auto end-0  start-0 mt-4 d-none d-lg-block ">
+          <img alt="img" src="assets/img/473402239.jpg" class="img-fluid w-69 mx-auto end-0  start-0 mt-4 d-none d-lg-block ">
         <div class="w-100 px-4 d-lg-none mt-5 pt-5">
             <h4 class="fs-24 font-bold text-center mb-5">ورود</h4>
             <h6 class="font-bold mt-5">همکار عزیز خوش آمدید!</h6>
@@ -51,9 +58,10 @@
                 جهت ورود و استفاده از سرویس های مختلف در تکام لطفا شماره موبایل و رمزعبور خود را وارد کنید.
             </p>
             <div class="mt-4">
-                <input placeholder="شماره موبایل" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
-                <input type="password" placeholder="رمز عبور" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-5 ">
-            </div>
+                <input placeholder="شماره موبایل*" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
+                <input type="password" placeholder="رمز عبور*" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
+                <input type="submit" value="ورود" class="rounded-8 h-56 w-100 border-0  text-white font-bold bg-darkblue d-flex align-items-center justify-content-center">
+              </div>
           </div>
         <div class="swiper login my-5 pt-3">
           <div class="swiper-wrapper">
@@ -81,7 +89,6 @@
           </div>
           <div class="swiper-pagination bottom-0 align-items-center d-flex justify-content-center "></div>
         </div>
-        <input type="submit" value="تایید" class="rounded-8 h-56 w-100  text-white font-bold bg-darkblue d-flex d-lg-none   align-items-center  justify-content-center">
         <a class="d-flex d-lg-none  align-items-center gap-2 justify-content-center  my-5">
           <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 9.66663L19 5.66663M19 5.66663V8.66663M19 5.66663H16" stroke="#4D5F6D" stroke-width="1.5"
