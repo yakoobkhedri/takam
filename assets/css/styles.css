@@ -136,6 +136,9 @@
   .w-140 {
     width: 140px;
   }
+  .w-160 {
+    width: 160px;
+  }
   .w-190 {
     width: 190px;
   }
@@ -474,6 +477,9 @@
       /* creates padding around scroll thumb */
     }
   /* aside */
+  aside{
+    width: 320px!important;
+  }
   aside li:hover,aside li.active2 {
     background-color: #f2f2f2;
   }
