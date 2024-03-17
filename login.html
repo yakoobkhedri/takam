@@ -24,16 +24,37 @@
         <p class="text-gray fs-12">
             جهت ورود و استفاده از سرویس های مختلف در تکام لطفا شماره موبایل و رمزعبور خود را وارد کنید.
         </p>
-        <form class="mt-4">
+        <form class="mt-5">
           <div class="form-floating mb-4">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">شماره موبایل <span class="text-danger fw-bold">*</span></label>
+            <div class="text-danger fs-10 fw-bold">
+              شماره موبایل اشتباه است...
+            </div>        
           </div>
             <div class="form-floating mb-4">
-              <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="password" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
               <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
+              <div class="text-danger fs-10 fw-bold">
+                رمز عبور اشتباه است...
+              </div> 
             </div>
-            
+            <div class="mb-4">
+              <div class="d-flex align-items-center position-relative">
+                <div class="rounded-8 bg-gray-transparent flex-shrink-0 w-100 h-40 border d-flex align-items-center gap-2 fs-14 fw-bold">
+                  <div class="form-floating h-100 flex-grow-1">
+                    <input type="password" class="form-control py-0 border-0" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">کد امنیتی<span class="text-danger fw-bold">*</span></label>
+                  </div>
+                  <div class="h-100 bg-orange rounded-8 text-white flex-shrink-0 d-flex align-items-center justify-content-center gap-3 fw-bold border-end text-center px-3">
+                    55930
+                  </div>
+                </div>
+              </div>
+              <div class="text-danger fs-10 fw-bold">
+                کد امنیتی اشتباه است...
+              </div> 
+            </div>
             <input type="submit" value="ورود" class="rounded-8 h-56 w-100  text-white font-bold bg-darkblue d-flex  align-items-center  justify-content-center">
         </form>
       </div>
@@ -50,7 +71,7 @@
     </div>
     <div class="col-lg-8 bg-login flex-grow-1 bg-gray h-100vh">
         <form class="h-100vh overflow-auto hidden-scroll h-lg-auto">
-          <img alt="img" src="assets/img/473402239.jpg" class="img-fluid w-69 mx-auto end-0  start-0 mt-4 d-none d-lg-block ">
+          <img alt="img" src="assets/img/473402239.jpg" class="img-fluid w-69 rounded-16 mx-auto end-0  start-0 mt-4 d-none d-lg-block ">
         <div class="w-100 px-4 d-lg-none mt-5 pt-5">
             <h4 class="fs-24 font-bold text-center mb-5">ورود</h4>
             <h6 class="font-bold mt-5">همکار عزیز خوش آمدید!</h6>
@@ -58,8 +79,36 @@
                 جهت ورود و استفاده از سرویس های مختلف در تکام لطفا شماره موبایل و رمزعبور خود را وارد کنید.
             </p>
             <div class="mt-4">
-                <input placeholder="شماره موبایل*" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
-                <input type="password" placeholder="رمز عبور*" class="fs-14 fw-bold outline-none h-56 rounded-8 bg-transparent w-100 border border-secondary px-3 mb-4 ">
+              <div class="form-floating mb-4">
+                <input type="text" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">شماره موبایل <span class="text-danger fw-bold">*</span></label>
+                <div class="text-danger fs-10 fw-bold">
+                  شماره موبایل اشتباه است...
+                </div> 
+              </div>
+                <div class="form-floating mb-4">
+                  <input type="password" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
+                  <div class="text-danger fs-10 fw-bold">
+                    رمز عبور اشتباه است...
+                  </div> 
+                </div>
+                <div class="mb-4">
+                  <div class="d-flex align-items-center position-relative">
+                    <div class="rounded-8 bg-gray-transparent flex-shrink-0 w-100 h-40 border-0 d-flex align-items-center gap-2 fs-14 fw-bold">
+                      <div class="form-floating mt-1 h-100 flex-grow-1">
+                        <input type="password" class="form-control py-0 border-0" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">کد امنیتی<span class="text-danger fw-bold">*</span></label>
+                      </div>
+                      <div class="h-35 bg-orange rounded-8 text-white flex-shrink-0 d-flex align-items-center justify-content-center gap-3 fw-bold border-end text-center px-3">
+                        55930
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-danger fs-10 fw-bold">
+                    کد امنیتی اشتباه است...
+                  </div> 
+                </div>
                 <input type="submit" value="ورود" class="rounded-8 h-56 w-100 border-0  text-white font-bold bg-darkblue d-flex align-items-center justify-content-center">
               </div>
           </div>
