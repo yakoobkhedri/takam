@@ -730,6 +730,7 @@ aside li.active .dropdownContent,
 
 .form-floating>label {
   right: 0;
+  left: auto;
 }
 
 #togglePassword.bi-eye img[alt="seen"],

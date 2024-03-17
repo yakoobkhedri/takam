@@ -2797,20 +2797,23 @@ textarea.form-control-lg {
 }
 
 .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
-    opacity: .65;
-      transform: scale(.85) translateY(-28px) translateX(52px)!important;
+    opacity: 100%;
+    font-weight: bold;
+      transform: scale(.85) translateY(-32px) translateX(29px) !important;
 }
 
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
-    opacity: .65;
-      transform: scale(.85) translateY(-28px) translateX(52px)!important;
+    opacity: 100%;
+    font-weight: bold;
+      transform: scale(.85) translateY(-32px) translateX(29px) !important;
 }
 
 .form-floating>.form-control:-webkit-autofill~label {
-    opacity: .65;
-      transform: scale(.85) translateY(-28px) translateX(52px)!important;
+    opacity: 100%;
+    font-weight: bold;
+      transform: scale(.85) translateY(-32px) translateX(29px) !important;
 }
 
 .input-group {
