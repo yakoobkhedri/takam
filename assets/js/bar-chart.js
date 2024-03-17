@@ -5,7 +5,7 @@ Highcharts.chart('container', {
     },
     title: {
         align: 'center',
-        text: 'امور مالی'
+        text: ''
     },
     accessibility: {
         announceNewData: {
@@ -68,7 +68,7 @@ Highcharts.chart('container2', {
     },
     title: {
         align: 'center',
-        text: 'امور مالی'
+        text: ''
     },
     accessibility: {
         announceNewData: {
@@ -131,7 +131,7 @@ Highcharts.chart('container3', {
     },
     title: {
         align: 'center',
-        text: 'امور مالی'
+        text: ''
     },
     accessibility: {
         announceNewData: {
@@ -194,7 +194,7 @@ Highcharts.chart('container4', {
     },
     title: {
         align: 'center',
-        text: 'امور مالی'
+        text: ''
     },
     accessibility: {
         announceNewData: {
