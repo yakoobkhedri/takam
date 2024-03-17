@@ -26,15 +26,23 @@
         </p>
         <form class="mt-5">
           <div class="form-floating mb-4">
-            <input type="text" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control py-0" id="floatingInput" placeholder="شماره موبایل">
             <label for="floatingInput">شماره موبایل <span class="text-danger fw-bold">*</span></label>
             <div class="text-danger fs-10 fw-bold">
               شماره موبایل اشتباه است...
             </div>        
           </div>
             <div class="form-floating mb-4">
-              <input type="password" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
+              <div class="d-flex align-items-center justify-content-between gap-2 p-2 pe-1 h-40 border rounded-8 mt-2">
+                <div class="form-floating flex-grow-1">
+                  <input type="password" id="pass1" class="form-control py-0 border-0 rounded-8" id="floatingInput" placeholder="">
+                  <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
+                </div>
+                <div id="togglePassword" class="bi-eye">
+                  <img alt="seen" src="assets/img/eye.svg" class="cursor-pointer">
+                  <img alt="unseen" src="assets/img/eye-slash.svg" class="cursor-pointer d-none">
+                </div>
+              </div>
               <div class="text-danger fs-10 fw-bold">
                 رمز عبور اشتباه است...
               </div> 
@@ -80,19 +88,27 @@
             </p>
             <div class="mt-4">
               <div class="form-floating mb-4">
-                <input type="text" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
+                <input type="text" class="form-control py-0" id="floatingInput" placeholder="شماره موبایل">
                 <label for="floatingInput">شماره موبایل <span class="text-danger fw-bold">*</span></label>
                 <div class="text-danger fs-10 fw-bold">
                   شماره موبایل اشتباه است...
                 </div> 
               </div>
-                <div class="form-floating mb-4">
-                  <input type="password" class="form-control py-0" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
-                  <div class="text-danger fs-10 fw-bold">
-                    رمز عبور اشتباه است...
-                  </div> 
+              <div class="form-floating mb-4">
+                <div class="d-flex align-items-center justify-content-between gap-2 p-2 pe-1 h-40 border rounded-8 mt-2">
+                  <div class="form-floating flex-grow-1">
+                    <input type="password" id="pass2" class="form-control py-0 border-0 rounded-8" id="floatingInput" placeholder="">
+                    <label for="floatingInput">رمز عبور <span class="text-danger fw-bold">*</span></label>
+                  </div>
+                  <div id="togglePassword2" class="bi-eye">
+                    <img alt="seen" src="assets/img/eye.svg" class="cursor-pointer">
+                    <img alt="unseen" src="assets/img/eye-slash.svg" class="cursor-pointer d-none">
+                  </div>
                 </div>
+                <div class="text-danger fs-10 fw-bold">
+                  رمز عبور اشتباه است...
+                </div> 
+              </div>
                 <div class="mb-4">
                   <div class="d-flex align-items-center position-relative">
                     <div class="rounded-8 bg-gray-transparent flex-shrink-0 w-100 h-40 border-0 d-flex align-items-center gap-2 fs-14 fw-bold">
